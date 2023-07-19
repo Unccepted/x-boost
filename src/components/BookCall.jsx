@@ -6,12 +6,36 @@ function BookCall() {
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
           <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Payments tool for software companies
+            Все еще сомниваетесь? Узнайте больше о продвижении контента в
+            Соц.Сетях
           </h1>
+          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Если вы все еще сомневаетесь в эффективности продвижения контента в
+            социальных сетях, давайте уладим все ваши вопросы и сомнения личным
+            созвоном.
+          </p> */}
+
           <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            From checkout to global sales tax compliance, companies around the
-            world use Flowbite to simplify their payment stack.
+            Закажите небольшой 15-минутный звонок, и мы с удовольствием обсудим
+            все аспекты нашего сотрудничества.
           </p>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Наши опытные специалисты будут рады поделиться более подробной
+            информацией о наших услугах и рассказать, как мы сможем помочь
+            вашему бренду добиться выдающихся результатов в социальных медиа.
+          </p>
+
+          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Eсли же вам удобнее получать информацию по почте, подпишитесь на нашу
+            рассылку. Таким образом, вы всегда будете в курсе последних
+            тенденций и лучших практик продвижения в социальных сетях.
+          </p> */}
+
+          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Не упустите возможность улучшить свою стратегию продвижения с нашей
+            помощью! Закажите созвон или подпишитесь на рассылку уже сегодня
+          </p> */}
+
           <a
             href="#"
             class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
@@ -34,11 +58,11 @@ function BookCall() {
             href="#"
             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
-            Speak to Sales
+            Подписаться на рассылку
           </a>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src={img_think} alt="mockup" />
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
+          <img src={img_think} alt="mockup" className="" />
         </div>
       </div>
     </section>
