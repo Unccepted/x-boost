@@ -1,4 +1,3 @@
-import "./App.css";
 import { Navigation } from "./components/Navigation";
 import { Home } from "./components/Home";
 import { Price } from "./components/Price";
@@ -9,6 +8,7 @@ import OurPartners from "./components/OurPartners";
 import BookCall from "./components/BookCall";
 import SocialProof from "./components/SocialProof";
 import Gallery from "./components/Gallery";
+import MoreLanguage from "./components/MoreLanguage";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <Gallery />
       <Price />
       <HowItWorks />
+      <MoreLanguage />
       <Testemonial />
       <BookCall />
       <Footer />
