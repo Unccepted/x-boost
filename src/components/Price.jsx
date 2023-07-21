@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+
 export function Price() {
   return (
     <div class="container px-4 mx-auto">
@@ -23,13 +25,11 @@ export function Price() {
       </p>
       <div class="flex flex-wrap justify-center -mx-4">
         <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-          <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-gray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
-            <span
-              class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl"
-              data-config-id="auto-txt-4-1"
-            >
-              Pricing
-            </span>
+          <div class="flex flex-col items-center pt-0 px-8 pb-8 bg-gray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
+            <div className="pb-2 pt-2 mb-2 border w-full rounded-es-lg rounded-ee-lg text-center text-green-400 border-green-400 shadow-sm bg-green-50">
+              100$ discount
+            </div>
+
             <h3
               class="mb-4 text-lg md:text-xl text-green-500 font-medium"
               data-config-id="auto-txt-5-1"
@@ -43,12 +43,14 @@ export function Price() {
               >
                 $
               </span>
+              {/*//! Сделать динамическую смену сумы услыги и поля месяц\год  */}
               <span
                 class="text-5xl text-gray-900 font-medium"
                 data-config-id="auto-txt-7-1"
               >
-                10
+                440
               </span>
+
               <span
                 class="text-3xl text-gray-900 font-medium"
                 data-config-id="auto-txt-8-1"
@@ -64,39 +66,23 @@ export function Price() {
             </p>
             <ul class="self-start mb-8">
               <li class="flex items-center mb-3 text-gray-500 font-medium">
-                <img
-                  class="mr-3"
-                  src="flex-ui-assets/elements/pricing/checkbox-green.svg"
-                  data-config-id="auto-img-1-1"
-                />
+                <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                 <span data-config-id="auto-txt-10-1">
                   Complete documentation
                 </span>
               </li>
               <li class="flex items-center mb-3 text-gray-500 font-medium">
-                <img
-                  class="mr-3"
-                  src="flex-ui-assets/elements/pricing/checkbox-green.svg"
-                  data-config-id="auto-img-2-1"
-                />
+                <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                 <span data-config-id="auto-txt-11-1">
                   Working materials in Figma
                 </span>
               </li>
               <li class="flex items-center mb-3 text-gray-500 font-medium">
-                <img
-                  class="mr-3"
-                  src="flex-ui-assets/elements/pricing/checkbox-green.svg"
-                  data-config-id="auto-img-3-1"
-                />
+                <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                 <span data-config-id="auto-txt-12-1">100GB cloud storage</span>
               </li>
               <li class="flex items-center text-gray-500 font-medium">
-                <img
-                  class="mr-3"
-                  src="flex-ui-assets/elements/pricing/checkbox-green.svg"
-                  data-config-id="auto-img-4-1"
-                />
+                <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                 <span data-config-id="auto-txt-13-1">500 team members</span>
               </li>
             </ul>
@@ -111,12 +97,6 @@ export function Price() {
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 p-4">
           <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-gray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
-            <span
-              class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl"
-              data-config-id="auto-txt-15-1"
-            >
-              Pricing
-            </span>
             <h3
               class="mb-4 text-lg md:text-xl text-green-500 font-medium"
               data-config-id="auto-txt-16-1"
@@ -134,7 +114,7 @@ export function Price() {
                 class="text-5xl text-gray-900 font-medium"
                 data-config-id="auto-txt-18-1"
               >
-                99
+                820
               </span>
               <span
                 class="text-3xl text-gray-900 font-medium"
@@ -198,12 +178,6 @@ export function Price() {
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 p-4">
           <div class="flex flex-col items-center pt-10 px-8 pb-8 bg-gray-50 rounded-md shadow-md hover:scale-105 transition duration-500">
-            <span
-              class="inline-block py-px px-2 mb-6 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-9xl"
-              data-config-id="auto-txt-26-1"
-            >
-              Pricing
-            </span>
             <h3
               class="mb-4 text-lg md:text-xl text-green-500 font-medium"
               data-config-id="auto-txt-27-1"
@@ -221,7 +195,7 @@ export function Price() {
                 class="text-5xl text-gray-900 font-medium"
                 data-config-id="auto-txt-29-1"
               >
-                799
+                1550
               </span>
               <span
                 class="text-3xl text-gray-900 font-medium"
