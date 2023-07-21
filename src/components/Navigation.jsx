@@ -24,7 +24,7 @@ export function Navigation() {
                     className="text-gray-500 hover:text-gray-900 font-medium"
                     href="#"
                   >
-                    Наши Примеры
+                    Наши примеры
                   </a>
                 </li>{" "}
                 <li className="mr-12">
@@ -32,7 +32,7 @@ export function Navigation() {
                     className="text-gray-500 hover:text-gray-900 font-medium"
                     href="#"
                   >
-                    Header-2
+                    Наши кейсы
                   </a>
                 </li>{" "}
                 <li className="mr-12">
@@ -40,7 +40,7 @@ export function Navigation() {
                     className="text-gray-500 hover:text-gray-900 font-medium"
                     href="#"
                   >
-                    Header-3
+                    Наши клиенты
                   </a>
                 </li>
                 <li className="mr-12">
@@ -61,7 +61,7 @@ export function Navigation() {
                 </li>
                 <li className="mr-12">
                   <div className="hidden xl:flex items-center justify-end">
-                    <button className="text-white hover:text-white-fade font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded">
+                    <button className="text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded">
                       Начать
                     </button>
                   </div>
