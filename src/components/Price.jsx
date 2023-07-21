@@ -11,12 +11,12 @@ export function Price() {
       >
         Pricing
       </span>
-      <h3
+      <h2
         class="mb-4 text-3xl md:text-5xl text-gray-900 font-bold tracking-tighter"
         data-config-id="auto-txt-2-1"
       >
         Flexible pricing plan for your startup
-      </h3>
+      </h2>
       <p
         class="mb-12 text-lg md:text-xl text-gray-500 font-medium"
         data-config-id="auto-txt-3-1"

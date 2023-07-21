@@ -7,7 +7,7 @@ import Testemonial from "./components/Testemonial";
 import OurPartners from "./components/OurPartners";
 import BookCall from "./components/BookCall";
 import SocialProof from "./components/SocialProof";
-import Gallery from "./components/Gallery";
+import OurCases from "./components/OurCases";
 import MoreLanguage from "./components/MoreLanguage";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Home />
       <OurPartners />
       <SocialProof />
-      <Gallery />
+      <OurCases />
       <Price />
       <HowItWorks />
       <MoreLanguage />
