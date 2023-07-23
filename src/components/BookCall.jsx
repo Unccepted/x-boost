@@ -1,4 +1,4 @@
-import img_think from "../imgs/still-thinking.png";
+import testVideo from "../video/test-video.mp4";
 
 function BookCall() {
   return (
@@ -61,8 +61,15 @@ function BookCall() {
             Подписаться на рассылку
           </a>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
-          <img src={img_think} alt="mockup" className="" />
+        <div class="w-full  lg:col-span-5 flex justify-center">
+          <div className="h-full  rounded-xl  w-72  shadow-md  shadow-slate-700">
+            <video
+              src={testVideo}
+              className="rounded-xl w-72 h-full object-cover"
+              autoPlay
+              loop
+            />
+          </div>
         </div>
       </div>
     </section>
