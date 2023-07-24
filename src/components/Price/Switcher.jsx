@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Switcher = ({ onChange }) => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);

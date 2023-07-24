@@ -350,7 +350,7 @@ export function Price() {
         </div>
         <div
           className={`text-gray-400 text-center mb-8 ${
-            isMonthly ? "" : "hidden"
+            isMonthly ? "" : "text-transparent select-none"
           }`}
         >
           Подписка начинается от 3 месяцев
