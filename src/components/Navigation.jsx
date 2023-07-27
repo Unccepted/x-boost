@@ -59,7 +59,7 @@ export function Navigation() {
                     Цена
                   </a>
                 </li>
-                <li className="mr-12">
+                <li className="">
                   <div className="hidden xl:flex items-center justify-end">
                     <button className="text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded">
                       Начать

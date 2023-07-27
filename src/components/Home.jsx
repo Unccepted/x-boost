@@ -72,7 +72,7 @@ export function Home() {
                   <video
                     src={testVideo}
                     className="rounded-xl w-72 h-full object-cover"
-                    autoPlay
+                    autoPlay="true"
                     loop
                   />
                 </div>
