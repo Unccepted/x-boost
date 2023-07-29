@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
-import Switcher from "./Price/Switcher";
-import lockIcon from "../svg/lock-svgrepo-com.svg";
+import Switcher from "./Switcher";
+import lockIcon from "../../svg/lock-svgrepo-com.svg";
 
 export function Price() {
   const [isMonthly, setIsMonthly] = useState(true);

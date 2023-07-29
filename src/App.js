@@ -1,7 +1,7 @@
 import { Navigation } from "./components/Navigation";
 import { Home } from "./components/Home";
-import { Price } from "./components/Price";
-import { HowItWorks } from "./components/HowItWorks";
+import { Price } from "./components/Price/index";
+import { HowItWorks } from "./components/HIW/HowItWorks";
 import Footer from "./components/Footer";
 import Testemonial from "./components/Testemonial";
 import OurPartners from "./components/OurPartners";
