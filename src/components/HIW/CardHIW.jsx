@@ -15,12 +15,12 @@ export function CardHIW({ count, header, text, time, arrow }) {
       </div>
       {arrow !== "hidden" && (
         <div
-          className={`border border-green-500 shadow-sm shadow-green-600 absolute 
+          className={`absolute   
           ${
             arrow === "up"
               ? "top-4 -right-7 rotate-6"
               : "bottom-4 -right-7 -rotate-6"
-          }  rotate-6 rounded-xl bg-white z-10`}
+          }  rounded-xl bg-white z-10 border-2 border-green-500 shadow-sm shadow-green-600`}
         >
           <img
             src={greenArrow}

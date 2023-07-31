@@ -1,7 +1,7 @@
 import React from "react";
 function OurCases() {
   return (
-    <section>
+    <section id="our-cases">
       <div className="md:mx-auto md:container px-4 mb-16">
         <div className="pt-10 md:pt-40">
           <div className="pb-4">
@@ -136,7 +136,7 @@ function OurCases() {
               <img
                 className="absolute w-full h-full inset-0 object-cover object-center rounded-md"
                 src="https://cdn.tuk.dev/assets/templates/prodify/invoicing-system.png"
-                alt
+                alt=""
               />
               <div className="relative z-10 p-4 bg-white shadow rounded mx-auto w-9/12 -mb-20">
                 <h4 className="text-gray-800 font-normal text-md leading-4 tracking-normal mb-2">

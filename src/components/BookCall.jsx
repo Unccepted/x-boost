@@ -2,10 +2,10 @@ import testVideo from "../video/test-video.mp4";
 
 function BookCall() {
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-gray-900">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-          <h1 class="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl dark:text-white">
+          <h1 class="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-white">
             Все еще сомниваетесь? Узнайте больше о продвижении контента в
             Соц.Сетях
           </h1>
@@ -15,11 +15,11 @@ function BookCall() {
             созвоном.
           </p> */}
 
-          <p class="max-w-2xl mb-4 font-light text-gray-500  md:text-lg lg:text-lg dark:text-gray-400">
+          <p class="max-w-2xl mb-4 font-light   md:text-lg lg:text-lg text-gray-400">
             Закажите небольшой 15-минутный звонок, и мы с удовольствием обсудим
             все аспекты нашего сотрудничества.
           </p>
-          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400 ">
+          <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-lg text-gray-400 ">
             Наши опытные специалисты будут рады поделиться более подробной
             информацией о наших услугах и рассказать, как мы сможем помочь
             вашему бренду добиться выдающихся результатов в социальных медиа.
@@ -38,7 +38,7 @@ function BookCall() {
 
           <a
             href="#"
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-900"
           >
             Запланировать созвон
             <svg
@@ -56,7 +56,7 @@ function BookCall() {
           </a>
           <a
             href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  border  rounded-lg  focus:ring-4  text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800"
           >
             Подписаться на рассылку
           </a>

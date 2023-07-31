@@ -1,7 +1,10 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 export default function Testemonial() {
   return (
-    <div class="min-w-screen  bg-gray-50 flex items-center justify-center ">
+    <section
+      id="our-clients"
+      class="min-w-screen  bg-gray-50 flex items-center justify-center "
+    >
       <div class="w-full bg-white    px-5  md:py-24 text-gray-800">
         <div class="w-full max-w-6xl mx-auto">
           <div class="text-center max-w-xl mx-auto">
@@ -27,6 +30,7 @@ export default function Testemonial() {
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
                   class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  alt="Client avatar"
                 />
               </div>
               <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
@@ -305,6 +309,6 @@ export default function Testemonial() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

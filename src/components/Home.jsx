@@ -6,21 +6,15 @@ import testVideo from "../video/test-video.mp4";
 
 export function Home() {
   return (
-    <section className="container px-4 mx-auto">
+    <section id="home" className="container px-4 mx-auto">
       <div className="py-20 md:py-28">
         <div className="flex flex-wrap xl:items-center ">
           <div className="flex max-md:flex-col-reverse justify-center">
             <div className="w-full md:w-1/2 px-4 mb-16 md:mb-0 ">
-              <h1
-                className="mb-6 text-2xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight text-gray-800 "
-                data-config-id="auto-txt-14-1"
-              >
+              <h1 className="mb-6 text-2xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight text-gray-800 ">
                 Создаем продающий контент, для продвижения вашего бизнеса.
               </h1>
-              <p
-                className="mb-8 text-lg md:text-xl text-gray-500 font-medium"
-                data-config-id="auto-txt-15-1"
-              >
+              <p className="mb-8 text-lg md:text-xl text-gray-500 font-medium">
                 Мы специализируемся на создании продающего контента, обращаясь
                 непосредственно к целевой аудитории. С опытом работы с
                 компаниями, обслуживающими возрастную категорию 40+,
@@ -32,7 +26,6 @@ export function Home() {
                   <a
                     className="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-green-500 rounded-md shadow-sm"
                     href="#"
-                    data-config-id="auto-txt-16-1"
                   >
                     Начать работу
                   </a>
@@ -41,7 +34,6 @@ export function Home() {
                   <a
                     className="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-green-600 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:bg-white-fade focus:ring-opacity-50 border border-green-500 rounded-md shadow-sm"
                     href="#"
-                    data-config-id="auto-txt-16-1"
                   >
                     Запланировать звонок
                   </a>

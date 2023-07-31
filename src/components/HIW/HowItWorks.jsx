@@ -2,7 +2,7 @@ import { CardHIW } from "./CardHIW";
 
 export function HowItWorks() {
   return (
-    <div class="container px-4 mx-auto">
+    <section id="how-its-work" class="container px-4 mx-auto">
       <div class="text-center mb-12 ">
         <h1 class="mb-8 text-6xl text-gray-900 font-bold tracking-tighter">
           Как это работает?
@@ -45,6 +45,6 @@ export function HowItWorks() {
           arrow={"hidden"}
         />
       </div>
-    </div>
+    </section>
   );
 }
