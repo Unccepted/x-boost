@@ -1,4 +1,4 @@
-import logo_img from "../imgs/logo's-img.png";
+import logo_img from "../../imgs/logo's-img.png";
 export default function Footer() {
   return (
     <footer class="bg-green-dark ">

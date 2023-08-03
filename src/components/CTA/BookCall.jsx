@@ -1,4 +1,4 @@
-import testVideo from "../video/test-video.mp4";
+import testVideo from "../../video/test-video.mp4";
 
 function BookCall() {
   return (

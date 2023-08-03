@@ -22,14 +22,14 @@ const Switcher = ({ onChange }) => {
             !isChecked ? "text-primary bg-[#f4f7ff]" : "text-body-color"
           }`}
         >
-          Одноразовая услуга
+          План на месяц
         </span>
         <span
           className={`flex items-center space-x-[6px] rounded py-2 px-8 text-sm font-medium ${
             isChecked ? "text-white-fade bg-green-600 " : "text-body-color"
           }`}
         >
-          Подписка
+          От 3-ёх месяцев
         </span>
       </label>
     </>

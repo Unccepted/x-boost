@@ -7,7 +7,7 @@ function MoreLanguage() {
             <div class="w-full lg:w-5/12 xl:w-7/12">
               <div class="px-6 py-12 md:px-12">
                 <h2 class="mb-6 pb-2 text-7xl font-bold text-gray-900">
-                  Контент на 23+ языках
+                  Контент на 18+ языках
                 </h2>
                 <p class="mb-6 pb-2 text-neutral-500 ">
                   Откройте для своего бренда новые горизонты с нашим

@@ -18,64 +18,33 @@ export function Prices(props) {
             <span>{props.discount} скидка</span>
           </div>
         )}
-        <h3
-          class="mb-4 text-lg md:text-xl text-green-500 font-medium"
-          data-config-id="auto-txt-5-1"
-        >
+        <h3 class="mb-4 text-lg md:text-xl text-green-500 font-medium">
           {props.plantLvl}
         </h3>
         <div class="mb-4">
-          <span
-            class="relative -top-6 right-1 text-2xl text-gray-900 font-medium"
-            data-config-id="auto-txt-6-1"
-          >
+          <span class="relative -top-6 right-1 text-2xl text-gray-900 font-medium">
             $
           </span>
 
-          <span
-            class="text-5xl text-gray-900 font-medium"
-            data-config-id="auto-txt-7-1"
-          >
-            {props.price}
-          </span>
+          <span class="text-5xl text-gray-900 font-medium">{props.price}</span>
 
-          <span
-            class="text-3xl text-gray-900 font-medium"
-            data-config-id="auto-txt-8-1"
-          >
-            /mo
-          </span>
+          <span class="text-3xl text-gray-900 font-medium">/mo</span>
         </div>
-        <p
-          class="mb-5 text-lg md:text-xl text-gray-400 font-medium "
-          data-config-id="auto-txt-9-1"
-        >
-          Billed annually
-        </p>
+        <p class="mb-5 text-lg md:text-xl text-gray-400 font-medium "></p>
         <ul class="self-start mb-8 border-t border-gray-400">
-          <li class="flex items-center mb-3 text-gray-500 font-medium mt-2">
-            <CheckCircleRoundedIcon className="text-green-400 mr-3" />
-            <span data-config-id="auto-txt-10-1">Complete documentation</span>
-          </li>
-          <li class="flex items-center mb-3 text-gray-500 font-medium">
-            <CheckCircleRoundedIcon className="text-green-400 mr-3" />
-            <span data-config-id="auto-txt-11-1">
-              Working materials in Figma
-            </span>
-          </li>
-          <li class="flex items-center mb-3 text-gray-500 font-medium">
-            <CheckCircleRoundedIcon className="text-green-400 mr-3" />
-            <span data-config-id="auto-txt-12-1">100GB cloud storage</span>
-          </li>
-          <li class="flex items-center text-gray-500 font-medium">
-            <CheckCircleRoundedIcon className="text-green-400 mr-3" />
-            <span data-config-id="auto-txt-13-1">500 team members</span>
-          </li>
+          {props.array.map((item) => (
+            <li
+              key={item}
+              class="flex items-center mb-3 text-gray-500 font-medium mt-2"
+            >
+              <CheckCircleRoundedIcon className="text-green-400 mr-3" />
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
         <a
           class="inline-block py-3 px-7 w-full border border-green-500 text-green-500 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:ring-white-fade focus:ring-opacity-50 rounded-md shadow-sm"
           href="#"
-          data-config-id="auto-txt-14-1"
         >
           Начать работу
         </a>

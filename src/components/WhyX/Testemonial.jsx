@@ -125,6 +125,7 @@ export default function Testemonial() {
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
                   class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  alt=""
                 />
               </div>
               <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
@@ -219,6 +220,7 @@ export default function Testemonial() {
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
                   class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  alt=""
                 />
               </div>
               <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
