@@ -8,7 +8,7 @@ import testVideo from "../../video/test-video.mp4";
 export function Home() {
   return (
     <section id="home" className="container px-4 mx-auto">
-      <div className="py-24 md:py-28">
+      <div className="py-24 md:py-12">
         <div className="flex flex-wrap xl:items-center ">
           <div className="flex max-md:flex-col-reverse justify-center">
             <div className="w-full md:w-1/2 px-4 mb-16 md:mb-0 ">

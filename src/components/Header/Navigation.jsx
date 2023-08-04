@@ -1,31 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { ContextApp } from "../ContextAPI";
+
 import logo_img from "../../imgs/logo's-img.png";
 import logo_text from "../../imgs/logo's-text.png";
-export function Navigation() {
-  const [scrollPos, setScrollPos] = useState(0);
+import memnuIcon from "../../svg/menu-icon.svg";
+import { DropdownNavigation } from "./DropdownNavigation";
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollPos(position);
-  };
+export function Navigation() {
+  const { scrolled, setScrolled } = useContext(ContextApp);
+  const { navmenu, setNavmenu } = useContext(ContextApp);
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section
       className={`sticky top-0 z-50 w-full ${
-        scrollPos > 50 ? "bg-opacity-90 bg-white" : "bg-transparent"
-      } bg-whire overflow-hidden text-xl `}
+        scrolled ? " bg-white p-3" : "bg-transparent p-6"
+      } bg-white overflow-hidden text-xl  transition-all duration-100`}
     >
-      <div className="bg-transparent container px-4 mx-auto ">
-        <nav className="flex justify-between p-6 px-4">
+      <header className="bg-transparent container px-4 mx-auto ">
+        <nav className="flex justify-between px-4">
           <div className="flex justify-between items-center w-full">
             <div className="w-1/2 xl:w-1/5 flex flex-row items-center">
               <div className="mr-2">
@@ -93,9 +98,16 @@ export function Navigation() {
                 </li>
               </ul>
             </div>
+            <button
+              class="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
+              onClick={() => setNavmenu(!navmenu)}
+            >
+              <img src={memnuIcon} alt="menu icon" className="w-14 " />
+            </button>
           </div>
         </nav>
-      </div>
+        <DropdownNavigation navmenu={navmenu} setNavmenu={setNavmenu} />
+      </header>
     </section>
   );
 }

@@ -11,6 +11,7 @@ import BookCall from "./components/CTA/BookCall";
 import { SocialProof } from "./components/WhyX/SocialProof";
 import OurCases from "./components/Content/OurCases";
 import MoreLanguage from "./components/Features/MoreLanguage";
+import PopupComponent from "./components/Popup/PopupComponent.jsx";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <MoreLanguage />
       <Testemonial />
       <BookCall />
-
+      <PopupComponent />
       {/* <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/partners" element={<OurPartners />} />
