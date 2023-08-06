@@ -12,12 +12,14 @@ import { SocialProof } from "./components/WhyX/SocialProof";
 import OurCases from "./components/Content/OurCases";
 import MoreLanguage from "./components/Features/MoreLanguage";
 import PopupComponent from "./components/Popup/PopupComponent.jsx";
+import { GrowChart } from "./components/Charts/GrowChart";
 
 function App() {
   return (
     <Router>
       <Navigation />
       <Home />
+      <GrowChart />
       <OurPartners />
       <SocialProof />
       <OurCases />
@@ -27,6 +29,7 @@ function App() {
       <Testemonial />
       <BookCall />
       <PopupComponent />
+
       {/* <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/partners" element={<OurPartners />} />
