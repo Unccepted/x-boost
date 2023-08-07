@@ -63,36 +63,6 @@ export function PriceComponent() {
             array={["До 50 видео в ниделю"]}
           />
 
-          <div class="w-full md:w-1/2 lg:w-1/4 p-4">
-            <div class="h-full flex flex-col items-center pt-8 px-8 pb-8 bg-gray-50 rounded-md shadow-md  transition duration-500">
-              <h3 class="my-4  text-lg md:text-xl text-green-500 font-medium">
-                Маштабируемый план
-              </h3>
-              <div class="mb-4">
-                <span class="relative -top-6 right-1 text-2xl text-gray-900 font-medium">
-                  $
-                </span>
-                {/*//! Сделать динамическую смену сумы услыги и поля месяц\год  */}
-                <span class="text-5xl text-gray-900 font-medium">от 35</span>
-
-                <span class="text-3xl text-gray-900 font-medium">/mo</span>
-              </div>
-              {/* <p
-                class="mb-7 text-lg md:text-xl text-gray-400 font-medium"
-                
-              >
-                Billed annually
-              </p> */}
-              <span>До 50 видео в ниделю</span>
-
-              <a
-                class="inline-block py-3 px-7 w-full border border-green-500 text-green-500 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:ring-white-fade focus:ring-opacity-50 rounded-md shadow-sm"
-                href="#"
-              >
-                Request a Demo
-              </a>
-            </div>
-          </div>
           {/* <div
             className={`text-gray-400 text-center my-8 ${
               isMonthly ? "" : "text-transparent select-none"
