@@ -13,11 +13,11 @@ export function SocialProof() {
             type={"Создали видео для наших клиентов"}
           />
           <NumberComponent
-            number={"19.530$"}
+            number={"22.500$"}
             type={"Затраты на маркетинг наших клиентов"}
           />
           <NumberComponent
-            number={"4 дней"}
+            number={"5 дней"}
             type={"Самая быстрая доставка роликов"}
           />
           <NumberComponent number={"23М+"} type={"Просмотров наших видео"} />

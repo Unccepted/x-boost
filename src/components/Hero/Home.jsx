@@ -12,11 +12,11 @@ export function Home() {
         <div className="flex flex-wrap xl:items-center ">
           <div className="flex max-md:flex-col-reverse justify-center">
             <div className="w-full md:w-1/2 px-4 mb-16 md:mb-0 ">
-              <h1 className="mb-6 text-2xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight text-gray-800 ">
+              <h1 className="mb-6 text-2xl md:text-5xl lg:text-5xl leading-tight font-bold tracking-tight text-gray-800 ">
                 Создание видеоконтента - это лучший инструмент для генерации
                 лояльных покупателей для вашего бизнеса!
               </h1>
-              <p className="mb-8 text-lg md:text-xl text-gray-500 font-medium">
+              <p className="mb-8 text-xl md:text-xl text-gray-500 font-medium">
                 Мы специализируемся на создание контента для вашего бизнеса,
                 который путем публикаций в соц сетях, таргета, принесет вам
                 органические охваты и повысит доверие к вашему бизнесу!

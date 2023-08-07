@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import testVideo from "../../video/test-video.mp4";
+import { ContextApp } from "../ContextAPI";
 
 function BookCall() {
+  const { showModal, setShowModal } = useContext(ContextApp);
   return (
     <section class="bg-gray-900">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -54,14 +57,14 @@ function BookCall() {
               ></path>
             </svg>
           </a>
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  border  rounded-lg  focus:ring-4  text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800"
+          <button
+            onClick={() => setShowModal(true)}
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  border  rounded-lg  focus:ring-4  text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800"
           >
             Подписаться на рассылку
-          </a>
+          </button>
         </div>
-        <div class="w-full  lg:col-span-5 flex justify-center">
+        <div className="w-full  lg:col-span-5 flex justify-center">
           <div className="h-full  rounded-xl  w-72  shadow-md  shadow-slate-700">
             <video
               src={testVideo}

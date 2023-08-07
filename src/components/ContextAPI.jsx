@@ -6,7 +6,7 @@ const ContextAppProvider = (props) => {
   const [scrolled, setScrolled] = useState(false);
   const [navmenu, setNavmenu] = useState(false);
   const notifisystem = useRef();
-  const [keyword, setKeyword] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <ContextApp.Provider
@@ -14,8 +14,8 @@ const ContextAppProvider = (props) => {
         scrolled,
         setScrolled,
         notifisystem,
-        keyword,
-        setKeyword,
+        showModal,
+        setShowModal,
         navmenu,
         setNavmenu,
       }}
