@@ -6,6 +6,7 @@ import logo_img from "../../imgs/logo's-img.png";
 import logo_text from "../../imgs/logo's-text.png";
 import memnuIcon from "../../svg/menu-icon.svg";
 import { DropdownNavigation } from "./DropdownNavigation";
+import { Links } from "./Links";
 
 export function Navigation() {
   const { scrolled, setScrolled } = useContext(ContextApp);
@@ -21,77 +22,46 @@ export function Navigation() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   return (
     <section
       className={`sticky top-0 z-50 w-full ${
-        scrolled ? " bg-white p-3" : "bg-transparent p-6"
-      } bg-white overflow-hidden text-xl  transition-all duration-100`}
+        scrolled ? " bg-white" : "bg-transparent "
+      } bg-white overflow-hidden text-xl transition-all duration-100`}
     >
-      <header className="bg-transparent container px-4 mx-auto ">
-        <nav className="flex justify-between px-4">
-          <div className="flex justify-between items-center w-full">
-            <div className="w-1/2 xl:w-1/5 flex flex-row items-center">
-              <div className="mr-2">
-                <Link smooth className="block max-w-max" to="#home">
-                  <img src={logo_img} alt="logo x-boost " className="h-12" />
-                </Link>
-              </div>
-              <div>
-                <img src={logo_text} alt="logo x-boost text" className="h-8" />
-              </div>
+      <header className="container p-4  mx-auto ">
+        <nav className="flex justify-between">
+          <div className="flex items-center w-full">
+            <div className="w-full xl:w-3/12">
+              <Link smooth className="flex gap-2 items-center" to="#home">
+                <img
+                  src={logo_img}
+                  alt="logo x-boost"
+                  className="h-full w-12 xl:w-16 lg:w-14 "
+                />
+                <img
+                  src={logo_text}
+                  alt="logo x-boost text"
+                  className="hidden min-[425px]:block max-w-max h-10 lg:h-12 "
+                />
+              </Link>
             </div>
-            <div className="w-full xl:w-4/5 justify-end">
-              <ul className="hidden xl:flex xl:justify-center items-center">
-                <li className="mr-12">
-                  <Link
-                    smooth
-                    className="text-gray-500 hover:text-gray-900 font-medium scroll-smooth"
-                    to="#why-x-boost"
-                  >
-                    Почему X-Boost
-                  </Link>
-                </li>
-                <li className="mr-12">
-                  <Link
-                    smooth
-                    className="text-gray-500 hover:text-gray-900 font-medium scroll-smooth"
-                    to="#our-cases"
-                  >
-                    Наши кейсы
-                  </Link>
-                </li>
-                <li className="mr-12">
-                  <Link
-                    smooth
-                    className="text-gray-500 hover:text-gray-900 font-medium scroll-smooth"
-                    to="#our-clients"
-                  >
-                    Наши клиенты
-                  </Link>
-                </li>
-                <li className="mr-12">
-                  <Link
-                    smooth
-                    className="text-gray-500 hover:text-gray-900 font-medium scroll-smooth"
-                    to="#how-its-work"
-                  >
-                    Как это работает
-                  </Link>
-                </li>
-                <li className="mr-12">
-                  <Link
-                    smooth
-                    className="text-gray-500 hover:text-gray-900 font-medium scroll-smooth hover:scroll-auto"
-                    to="#price"
-                  >
-                    Цена
-                  </Link>
-                </li>
-                <li className="">
+            <div className="w-full xl:w-9/12">
+              {/* Here change menu types   */}
+
+              <ul className="hidden xl:flex xl:justify-end items-center">
+                <Links url="#why-x-boost" text="Почему X-Boost" />
+                <Links url="#our-cases" text="Наши кейсы" />
+                {/* Add when have feedack */}
+
+                {/* <Links url="#our-clients" text="Наши клиенты" /> */}
+                <Links url="#how-its-work" text="Как это работает" />
+                <Links url="#price" text="Цена" />
+
+                <li>
                   <div className="hidden xl:flex items-center justify-end">
-                    <button className="text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded">
+                    <button className="text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded-md">
                       Начать
                     </button>
                   </div>
@@ -102,7 +72,7 @@ export function Navigation() {
               class="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
               onClick={() => setNavmenu(!navmenu)}
             >
-              <img src={memnuIcon} alt="menu icon" className="w-14 " />
+              <img src={memnuIcon} alt="menu icon" className="w-20 " />
             </button>
           </div>
         </nav>

@@ -6,7 +6,7 @@ export function NumberComponent(props) {
       <div class="mb-2 text-3xl md:text-4xl font-extrabold text-gray-900">
         {props.number}
       </div>
-      <div class="font-light text-gray-600 font-medium"> {props.type}</div>
+      <div class="text-gray-600 font-medium"> {props.type}</div>
       <div className="absolute  shadow-md rounded-2xl border-white -top-14 right-6 h-20 w-20 -rotate-6 bg-green-500">
         <ArrowOutwardRoundedIcon
           fontSize="large"

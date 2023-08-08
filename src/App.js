@@ -18,14 +18,14 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <Home />
-      <GrowChart />
+      {/* <Home />  */}
+      {/* <GrowChart /> */}
       <OurPartners />
       <SocialProof />
-      <OurCases />
-      <PriceComponent />
-      <HowItWorks />
+      {/* <OurCases /> */}
       <MoreLanguage />
+      {/* <HowItWorks /> */}
+      <PriceComponent />
       <Testemonial />
       <BookCall />
       <PopupComponent />

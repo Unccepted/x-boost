@@ -3,7 +3,7 @@ import { NumberComponent } from "./NumberComponent";
 export function SocialProof() {
   return (
     <section id="why-x-boost" class="bg-gray-900">
-      <div class="container px-4 mx-auto lg:py-16 lg:px-6">
+      <div class="container px-4 mx-auto py-16 lg:px-6">
         <div className=" text-white text-6xl font-bold mb-16">
           Почему X-Boost?
         </div>
