@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import logo_img from "../../imgs/logo's-img.png";
 import logo_text from "../../imgs/logo's-text.png";
 import { DropdownLink } from "./DropdownLink";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { ContextApp } from "../ContextAPI";
 
 export function DropdownNavigation(props) {
+  const { navmenu, setNavmenu } = useContext(ContextApp);
   return (
     <nav
       class={` ${
@@ -15,7 +17,14 @@ export function DropdownNavigation(props) {
       <div class="fixed top-0 left-0 bottom-0 w-9/12 max-w-md bg-white p-4">
         <div class="m-auto p-4 grid grid-cols-1 gap-8">
           <div className="flex justify-between">
-            <Link smooth className="max-w-max flex items-center" to="#home">
+            <Link
+              smooth
+              className="max-w-max flex items-center"
+              to="#home"
+              onClick={() => {
+                setNavmenu(!navmenu);
+              }}
+            >
               <img src={logo_img} alt="logo x-boost " className="h-14 mr-4" />
               <img
                 src={logo_text}

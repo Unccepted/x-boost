@@ -30,7 +30,7 @@ export function Navigation() {
         scrolled ? " bg-white" : "bg-transparent "
       } bg-white overflow-hidden text-xl transition-all duration-100`}
     >
-      <header className="container p-4  mx-auto ">
+      <header className="container px-8 py-4 mx-auto ">
         <nav className="flex justify-between">
           <div className="flex items-center w-full">
             <div className="w-full xl:w-3/12">

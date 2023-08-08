@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Navigation />
-      {/* <Home />  */}
+      <Home />
       {/* <GrowChart /> */}
       <OurPartners />
       <SocialProof />
