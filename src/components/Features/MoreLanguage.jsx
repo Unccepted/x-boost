@@ -1,10 +1,12 @@
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+
 function MoreLanguage() {
   return (
     <div class="container my-24 mx-auto md:px-6">
-      <section class="mb-32 text-center md:text-left">
+      <section class="text-center lg:text-left">
         <div class="block rounded-lg bg-white  ">
-          <div class="flex flex-wrap-reverse  items-center">
-            <div class="w-full lg:w-5/12 xl:w-7/12">
+          <div class="flex flex-wrap-reverse items-center">
+            <div class="w-full lg:w-7/12">
               <div class="px-6 py-12 md:px-12">
                 <h2 class="mb-6 pb-2 text-7xl font-bold text-gray-900">
                   Контент на 18+ языках
@@ -15,121 +17,31 @@ function MoreLanguage() {
                   более чем 23 языками и создадут убедительный и аутентичный
                   контент, способный привлечь широкую аудиторию.
                 </p>
-                <div class="mb-6 flex flex-wrap">
-                  <div class="mb-4 w-full md:w-4/12">
+                <div class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols  mb-6">
+                  <div class="mb-4 w-full">
                     <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
+                      <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Русский
                     </p>
                   </div>
-                  <div class="mb-4 w-full md:w-4/12">
+                  <div class="mb-4 w-full ">
                     <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
+                      <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Украинский
                     </p>
                   </div>
-                  <div class="mb-4 w-full md:w-4/12">
+                  <div class="mb-4 w-full">
                     <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
+                      <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Английский
                     </p>
                   </div>
-                  {/* <div class="mb-4 w-full md:w-4/12">
+                  <div class="mb-4 w-full">
                     <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      Updates
+                      <CheckCircleRoundedIcon className="text-green-400 mr-3" />
+                      И другие.
                     </p>
                   </div>
-                  <div class="mb-4 w-full md:w-4/12">
-                    <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      Reports
-                    </p>
-                  </div>
-                  <div class="mb-4 w-full md:w-4/12">
-                    <p class="flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        class="mr-3 h-5 w-5 text-neutral-900 "
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      Mobile
-                    </p>
-                  </div> */}
                 </div>
                 <button
                   type="button"
@@ -141,7 +53,7 @@ function MoreLanguage() {
                 </button>
               </div>
             </div>
-            <div class="block w-full   lg:flex lg:w-7/12 xl:w-5/12">
+            <div class="w-full lg:w-5/12">
               <img
                 src="https://mdbcdn.b-cdn.net/img/new/ecommerce/vertical/126.jpg"
                 alt="Trendy Pants and Shoes"

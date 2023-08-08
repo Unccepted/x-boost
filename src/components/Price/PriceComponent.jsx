@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import Switcher from "./Switcher";
-import lockIcon from "../../svg/lock-svgrepo-com.svg";
 import { Prices } from "./Prices";
 import { PriceHeader } from "./PriceHeader";
 
@@ -16,16 +14,16 @@ export function PriceComponent() {
 
   return (
     <section id="price" class="container px-4 mx-auto">
-      <div className="py-24">
+      <div className="py-12">
         <div className="flex">
           <div className="w-full">
-            <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row lg:pl-8 justify-between items-center">
               <div>
-                <h2 class="pl-8 text-3xl md:text-5xl text-gray-900 font-bold tracking-tighter">
+                <h2 class="text-center pb-8 text-5xl lg:text-6xl text-gray-900 font-bold tracking-tighter">
                   Цена
                 </h2>
               </div>
-              <div className="flex justify-end self-end  mr-0  w-1/3 ">
+              <div className="flex w-full sm:w-3/4 lg:justify-end lg:w-2/4  xl:w-1/3">
                 <Switcher onChange={handleChange} />
               </div>
             </div>
@@ -36,7 +34,7 @@ export function PriceComponent() {
           <Prices
             isMonthly={isMonthly}
             discount={30}
-            price={420}
+            price={520}
             plantLvl={"Базовый План"}
             array={["15 видео", "1 актер", "Базовое отслеживание метрик"]}
           />
@@ -44,6 +42,7 @@ export function PriceComponent() {
             isMonthly={isMonthly}
             discount={20}
             price={980}
+            best={true}
             plantLvl={"Продвинутый план"}
             scale={"scale-105"}
             array={["30 видео", "2 актерa", "Продвинутое отслеживание метрик"]}
@@ -62,14 +61,6 @@ export function PriceComponent() {
             plantLvl={"Маштабируемый план"}
             array={["До 50 видео в ниделю"]}
           />
-
-          {/* <div
-            className={`text-gray-400 text-center my-8 ${
-              isMonthly ? "" : "text-transparent select-none"
-            }`}
-          >
-            Подписка начинается от 3 месяцев
-          </div> */}
         </div>
       </div>
     </section>

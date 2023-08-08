@@ -8,7 +8,8 @@ export function Prices(props) {
       <div
         class={`h-full flex flex-col items-center ${
           props.hidden ? "pt-8" : "pt-0 "
-        } px-8 pb-8 bg-gray-50 rounded-md shadow-md ${props.scale} transition`}
+        } px-8 pb-8 bg-white rounded-md shadow-md border-x-2 ${props.scale}  
+        ${props.best ? " border-b-2 border-green-500 " : ""} `}
       >
         {!props.hidden ? (
           props.isMonthly ? (
@@ -32,7 +33,7 @@ export function Prices(props) {
           {props.plantLvl}
         </h3>
         {props.isMonthly && !props.hidden ? (
-          <div class="mb-4">
+          <div class="mb-1 lg:mb-4">
             {/* <span class="relative -top-6 right-1 text-2xl text-gray-900 font-medium">
               $
             </span> */}
@@ -44,7 +45,7 @@ export function Prices(props) {
             <span class="text-3xl text-gray-900 font-medium">/мес.</span>
           </div>
         ) : (
-          <div class="mb-4">
+          <div class="mb-1 lg:mb-4">
             <span class="text-5xl text-gray-900 font-medium">
               {props.price}
             </span>
