@@ -30,7 +30,7 @@ export function PriceComponent() {
             <PriceHeader isMonthly={isMonthly} />
           </div>
         </div>
-        <div class="flex flex-wrap justify-center -mx-4">
+        <div class="flex flex-nowrap gap-8 pb-8 overflow-x-scroll lg:overflow-x-auto">
           <Prices
             isMonthly={isMonthly}
             discount={30}
@@ -44,13 +44,13 @@ export function PriceComponent() {
             price={980}
             best={true}
             plantLvl={"Продвинутый план"}
-            scale={"scale-105"}
+            // scale={"scale-105"}
             array={["30 видео", "2 актерa", "Продвинутое отслеживание метрик"]}
           />
           <Prices
             isMonthly={isMonthly}
             discount={10}
-            price={1440}
+            price={1560}
             plantLvl={"Премиум план"}
             array={["45 видео", "до 4 актеров", "Глубокое отслеживание метрик"]}
           />

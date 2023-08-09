@@ -20,13 +20,13 @@ function App() {
       <Navigation />
       <Home />
       {/* <GrowChart /> */}
-      <OurPartners />
+      {/* <OurPartners /> */}
       <SocialProof />
       {/* <OurCases /> */}
       <MoreLanguage />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       <PriceComponent />
-      <Testemonial />
+      {/* <Testemonial /> */}
       <BookCall />
       <PopupComponent />
 

@@ -4,12 +4,16 @@ import lockIcon from "../../svg/lock-svgrepo-com.svg";
 
 export function Prices(props) {
   return (
-    <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class="w-64 flex-none lg:flex lg:w-72">
       <div
         class={`h-full flex flex-col items-center ${
           props.hidden ? "pt-8" : "pt-0 "
         } px-8 pb-8 bg-white rounded-md shadow-md border-x-2 ${props.scale}  
-        ${props.best ? " border-b-2 border-green-500 " : ""} `}
+        ${
+          props.best
+            ? "border-b border-green-500 shadow-md shadow-green-500 "
+            : ""
+        } `}
       >
         {!props.hidden ? (
           props.isMonthly ? (
@@ -33,32 +37,27 @@ export function Prices(props) {
           {props.plantLvl}
         </h3>
         {props.isMonthly && !props.hidden ? (
-          <div class="mb-1 lg:mb-4">
-            {/* <span class="relative -top-6 right-1 text-2xl text-gray-900 font-medium">
-              $
-            </span> */}
-
-            <span class="text-5xl text-gray-900 font-medium">
+          <div class="mb-1 lg:mb-4 flex gap-1">
+            <span class="text-3xl lg:text-5xl text-gray-900 font-medium">
               {(props.price * (100 - props.discount)) / 100}
             </span>
-            <span class="relative text-5xl text-gray-900 font-medium">$</span>
-            <span class="text-3xl text-gray-900 font-medium">/мес.</span>
+            <span class="text-xl text-gray-900 font-medium">$</span>
+            <span class="text-xl text-gray-900 font-medium">/мес.</span>
           </div>
         ) : (
           <div class="mb-1 lg:mb-4">
-            <span class="text-5xl text-gray-900 font-medium">
+            <span class="text-3xl lg:text-5xl text-gray-900 font-medium">
               {props.price}
             </span>
-            <span class="relative text-5xl text-gray-900 font-medium">$</span>
+            <span class="relative text-2xl text-gray-900 font-medium">$</span>
           </div>
         )}
 
-        <p class="mb-5 text-lg md:text-xl text-gray-400 font-medium "></p>
-        <ul class="self-start mb-8 border-t border-gray-400">
+        <ul class="self-start border-t w-full border-gray-200 ">
           {props.array.map((item) => (
             <li
               key={item}
-              class="flex items-center mb-3 text-gray-500 font-medium mt-2"
+              class="flex items-center mb-3 text-gray-500 font-medium mt-2 text-sm"
             >
               <CheckCircleRoundedIcon className="text-green-400 mr-3" />
               <span>{item}</span>
