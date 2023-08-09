@@ -13,7 +13,7 @@ export function HowItWorks() {
           </p>
         </div>
 
-        <div class="flex flex-wrap -mx-4 ">
+        <div class="grid grid-rows-1 lg:grid-cols-4 gap-y-8 ">
           <CardHIW
             count={1}
             header={"Первая встреча и брифинг"}
