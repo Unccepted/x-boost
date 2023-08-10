@@ -2,7 +2,7 @@ import youtubeIcon from "../../imgs/youtube-icon-svgrepo-com.png";
 import tiktokIcon from "../../imgs/tictokIcon.png";
 import instagramIcon from "../../imgs/instagram-1-svgrepo-com.png";
 import facebookIcon from "../../imgs/facebook-svgrepo-com.png";
-import testVideo from "../../video/test-video.mp4";
+import mainVideo from "../../video/main-video.mp4";
 import { Icons } from "./Icons";
 
 export function VideoHero() {
@@ -32,7 +32,7 @@ export function VideoHero() {
             alt={"facebook icon"}
           />
           <video
-            src={testVideo}
+            src={mainVideo}
             className="rounded-xl w-full h-full object-cover shadow-md "
             autoPlay
             loop

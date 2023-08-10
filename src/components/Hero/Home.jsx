@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 export function Home() {
   return (
     <section id="home" className="container px-8 mx-auto">
-      <div className="py-8 lg:py-24">
+      <div className="py-8 lg:py-16 xl:py-24">
         <div className="flex flex-col-reverse lg:flex-row items-center  justify-center">
           <div className="mt-8 lg:my-0 lg:w-1/2 lg:mb-4 ">
             <h1 className="text-center  mb-6 text-2xl leading-tight font-bold tracking-tight text-gray-900 lg:text-left lg:text-4xl xl:text-5xl">

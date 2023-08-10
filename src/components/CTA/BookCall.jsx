@@ -1,22 +1,14 @@
-import { useContext } from "react";
-import testVideo from "../../video/test-video.mp4";
-import { ContextApp } from "../ContextAPI";
+import mainVideo from "../../video/main-video.mp4";
 
 function BookCall() {
-  const { showModal, setShowModal } = useContext(ContextApp);
   return (
     <section class="bg-gray-900">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto lg:col-span-7 text-center lg:text-left">
           <h1 class="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-white">
             Все еще сомниваетесь? Узнайте больше о продвижении контента в
             Соц.Сетях
           </h1>
-          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Если вы все еще сомневаетесь в эффективности продвижения контента в
-            социальных сетях, давайте уладим все ваши вопросы и сомнения личным
-            созвоном.
-          </p> */}
 
           <p class="max-w-2xl mb-4 font-light   md:text-lg lg:text-lg text-gray-400">
             Закажите небольшой 15-минутный звонок, и мы с удовольствием обсудим
@@ -28,46 +20,20 @@ function BookCall() {
             вашему бренду добиться выдающихся результатов в социальных медиа.
           </p>
 
-          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Eсли же вам удобнее получать информацию по почте, подпишитесь на нашу
-            рассылку. Таким образом, вы всегда будете в курсе последних
-            тенденций и лучших практик продвижения в социальных сетях.
-          </p> */}
-
-          {/* <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Не упустите возможность улучшить свою стратегию продвижения с нашей
-            помощью! Закажите созвон или подпишитесь на рассылку уже сегодня
-          </p> */}
-
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-900"
-          >
-            Запланировать созвон
-            <svg
-              class="w-5 h-5 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div className="w-1/2">
+            <a
+              className="inline-flex w-full items-center justify-center py-5 px-3 text-base font-medium text-center    rounded-lg    text-green-50 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-green-500"
+              smooth
+              to="#"
             >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
-          <button
-            onClick={() => setShowModal(true)}
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  border  rounded-lg  focus:ring-4  text-white border-gray-700 hover:bg-gray-700 focus:ring-gray-800"
-          >
-            Подписаться на рассылку
-          </button>
+              Запланировать звонок
+            </a>
+          </div>
         </div>
         <div className="w-full  lg:col-span-5 flex justify-center">
           <div className="h-full  rounded-xl  w-72  shadow-md  shadow-slate-700">
             <video
-              src={testVideo}
+              src={mainVideo}
               className="rounded-xl w-72 h-full object-cover"
               autoPlay
               loop

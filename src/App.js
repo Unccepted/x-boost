@@ -22,7 +22,7 @@ function App() {
       {/* <GrowChart /> */}
       {/* <OurPartners /> */}
       <SocialProof />
-      {/* <OurCases /> */}
+      <OurCases />
       <MoreLanguage />
       <HowItWorks />
       <PriceComponent />
