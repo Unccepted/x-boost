@@ -6,20 +6,26 @@ export function Cases(props) {
       <div className="flex flex-col justify-center lg:grid lg:grid-rows-none lg:grid-cols-2 items-center pb-12">
         {/* Смена порядка текста */}
         <div
-          className={`w-full flex lg:mt-8 justify-center lg:justify-end text-center lg:text-left ${
+          className={`w-full flex flex-col-reverse lg:mt-8  items-center lg:justify-end text-center lg:text-left ${
             props.reverse
-              ? "lg:order-2 flex-row-reverse lg:text-right xl:pl-20 "
-              : " xl:pr-20 "
+              ? "lg:order-2 flex-row-reverse lg:text-right  "
+              : "mr-auto "
           }`}
         >
-          {/* <div
-            className={` ${!props.reverse ? "mr-8" : "ml-8"} flex items-center`}
-          ></div> */}
+          <div
+            className={`
+             ${!props.reverse ? "lg:ml-auto" : "lg:mr-auto"} 
+            flex items-center border-transparent rounded-2xl shadow shadow-green-400 w-32 h-32 mb-8`}
+          >
+            <img src={props.caseIcon} alt={props.alt} className="p-4" />
+          </div>
 
           {/* Округление с сторон */}
           <div
-            className={`grid grid-rows-2 items-center gap-4 text-color px-4 p-4 lg:rounded-t-3xl lg:shadow  ${
-              props.reverse ? "lg:rounded-s-3xl " : "lg:rounded-e-3xl "
+            className={`grid grid-rows-2 items-center gap-4 text-color px-4 p-4 lg:rounded-t-3xl lg:shadow mb-8  ${
+              props.reverse
+                ? "lg:rounded-s-3xl lg:mr-auto"
+                : "lg:rounded-e-3xl lg:ml-auto"
             }`}
           >
             <h1 className="text-4xl text-gray-900 md:leading-snug tracking-tighter font-black">

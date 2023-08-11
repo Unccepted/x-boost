@@ -26,6 +26,7 @@ export function DropdownNavigation(props) {
               }}
             >
               <img src={logo_img} alt="logo x-boost " className="h-14 mr-4" />
+
               <img
                 src={logo_text}
                 alt="logo x-boost text"

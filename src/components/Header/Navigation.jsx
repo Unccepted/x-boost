@@ -34,17 +34,27 @@ export function Navigation() {
       <header className="container px-8 py-4 mx-auto ">
         <nav className="flex justify-between">
           <div className="flex items-center w-full">
-            <div className="w-full xl:w-3/12">
-              <Link smooth className="flex gap-2 items-center" to="#home">
+            <div className="max-w-max xl:w-3/12">
+              <Link
+                smooth
+                className="flex gap-1 min-[420px]:gap-2 items-center"
+                to="#home"
+              >
                 <img
                   src={logo_img}
                   alt="logo x-boost"
                   className="h-full w-12 xl:w-16 lg:w-14 "
                 />
+                <span className="min-[420px]:hidden uppercase font-sans font-extrabold text-2xl text-emerald-600">
+                  -
+                </span>
+                <span className="min-[420px]:hidden uppercase font-sans font-extrabold text-2xl text-emerald-600">
+                  boost
+                </span>
                 <img
                   src={logo_text}
                   alt="logo x-boost text"
-                  className="hidden min-[425px]:block max-w-max h-10 lg:h-12 "
+                  className="hidden min-[420px]:block max-w-max h-10 lg:h-12 "
                 />
               </Link>
             </div>

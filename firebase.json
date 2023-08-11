@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "build",
+    "channel": "main",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

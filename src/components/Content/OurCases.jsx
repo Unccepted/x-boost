@@ -1,6 +1,11 @@
 import caseOneVideo from "../../video/Case-1.mp4";
 import caseTwoVideo from "../../video/Case-2.mp4";
 import caseThreeVideo from "../../video/Case-3.mp4";
+
+import tatuImg from "../../imgs/tatuImg.jpg";
+import waterDImg from "../../imgs/waterD.jpg";
+import appImg from "../../imgs/dating.png";
+
 import React from "react";
 import { Cases } from "./Cases";
 
@@ -23,6 +28,8 @@ function OurCases() {
             number={110}
             salesType={"человек в месяц"}
             procent={"110%%"}
+            caseIcon={tatuImg}
+            alt="tatu black icon"
           />
           <Cases
             reverse={true}
@@ -32,6 +39,8 @@ function OurCases() {
             number={36}
             salesType={"заказов в месяц"}
             procent={"40%%"}
+            caseIcon={waterDImg}
+            alt="color water despencer icon"
           />
           <Cases
             niche={"Знакомства и отношения"}
@@ -40,6 +49,8 @@ function OurCases() {
             number={6750}
             salesType={"ежедневная активная аудитория"}
             procent={"65%"}
+            caseIcon={appImg}
+            alt="dating ai app icon"
           />
         </div>
       </div>
