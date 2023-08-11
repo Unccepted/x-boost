@@ -1,4 +1,5 @@
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+import { CalendyButton } from "../Resusable/CalendyButton";
 
 function MoreLanguage() {
   return (
@@ -43,14 +44,10 @@ function MoreLanguage() {
                     </p>
                   </div>
                 </div>
-                <button
-                  type="button"
+                <CalendyButton
                   className="inline-block py-5 px-16 text-base md:text-lg leading-4 text-green-50 font-medium text-center bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-green-500 rounded-md shadow-sm"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  Начать сейчас
-                </button>
+                  buttonText="Начать сейчас"
+                />
               </div>
             </div>
             <div class="w-full lg:w-5/12">

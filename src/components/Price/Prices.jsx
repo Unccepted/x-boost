@@ -1,6 +1,7 @@
 import React from "react";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import lockIcon from "../../svg/lock-svgrepo-com.svg";
+import { CalendyButton } from "../Resusable/CalendyButton";
 
 export function Prices(props) {
   return (
@@ -64,12 +65,10 @@ export function Prices(props) {
             </li>
           ))}
         </ul>
-        <a
-          class="inline-block py-3 px-7 mt-auto w-full border border-green-500 text-green-500 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:ring-white-fade focus:ring-opacity-50 rounded-md shadow-sm"
-          href="#"
-        >
-          Начать работу
-        </a>
+        <CalendyButton
+          className="inline-block py-3 px-7 mt-auto w-full border border-green-500 text-green-500 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:ring-white-fade focus:ring-opacity-50 rounded-md shadow-sm"
+          buttonText="Начать работу"
+        />
       </div>
     </div>
   );

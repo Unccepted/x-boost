@@ -7,6 +7,7 @@ import logo_text from "../../imgs/logo's-text.png";
 import memnuIcon from "../../svg/menu-icon.svg";
 import { DropdownNavigation } from "./DropdownNavigation";
 import { Links } from "./Links";
+import { CalendyButton } from "../Resusable/CalendyButton";
 
 export function Navigation() {
   const { scrolled, setScrolled } = useContext(ContextApp);
@@ -61,9 +62,12 @@ export function Navigation() {
 
                 <li>
                   <div className="hidden xl:flex items-center justify-end">
-                    <button className="text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded-md">
-                      Начать
-                    </button>
+                    <CalendyButton
+                      buttonText="Начать"
+                      className={
+                        "text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded-md"
+                      }
+                    />
                   </div>
                 </li>
               </ul>
