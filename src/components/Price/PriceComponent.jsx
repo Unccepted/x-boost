@@ -30,7 +30,7 @@ export function PriceComponent() {
             <PriceHeader isMonthly={isMonthly} />
           </div>
         </div>
-        <div class="flex flex-nowrap justify-center gap-8 pb-8 overflow-x-scroll lg:overflow-x-auto">
+        <div class="flex flex-nowrap xl:justify-center gap-8 pb-8 overflow-x-scroll lg:overflow-x-auto">
           <Prices
             isMonthly={isMonthly}
             discount={30}

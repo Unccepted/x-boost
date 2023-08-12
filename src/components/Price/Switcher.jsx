@@ -29,7 +29,7 @@ const Switcher = ({ onChange }) => {
             isChecked ? "text-white-fade bg-green-600 " : "text-gray-900"
           }`}
         >
-          От 3-ёх месяцев
+          От трех месяцев
         </span>
       </label>
     </>

@@ -1,4 +1,6 @@
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+import collageSmall from "../../imgs/Collage.png";
+import collageBig from "../../imgs/CollageB.png";
 import { CalendyButton } from "../Resusable/CalendyButton";
 
 function MoreLanguage() {
@@ -8,7 +10,7 @@ function MoreLanguage() {
         <div class="block rounded-lg bg-white  ">
           <div class="flex flex-wrap-reverse items-center">
             <div class="w-full lg:w-7/12">
-              <div class="px-6 py-12 md:px-12">
+              <div class="py-12 md:px-12">
                 <h2 class="mb-6 pb-2 text-7xl font-bold text-gray-900">
                   Контент на 22+ языках
                 </h2>
@@ -18,7 +20,7 @@ function MoreLanguage() {
                   более чем 22 языками и создадут убедительный и аутентичный
                   контент, способный привлечь широкую аудиторию.
                 </p>
-                <div class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols  mb-6">
+                <div class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols px-6  mb-6">
                   <div class="mb-4 w-full">
                     <p class="flex">
                       <CheckCircleRoundedIcon className="text-green-400 mr-3" />
@@ -52,9 +54,14 @@ function MoreLanguage() {
             </div>
             <div class="w-full lg:w-5/12">
               <img
-                src="https://mdbcdn.b-cdn.net/img/new/ecommerce/vertical/126.jpg"
+                src={collageSmall}
                 alt="Trendy Pants and Shoes"
-                class="w-full rounded-lg "
+                class="w-full lg:hidden rounded-lg "
+              />
+              <img
+                src={collageBig}
+                alt="Trendy Pants and Shoes"
+                class="hidden lg:block w-full rounded-lg "
               />
             </div>
           </div>

@@ -45,6 +45,7 @@ function BookCall() {
               className="rounded-xl w-72 h-full object-cover"
               autoPlay
               loop
+              muted
             />
           </div>
         </div>

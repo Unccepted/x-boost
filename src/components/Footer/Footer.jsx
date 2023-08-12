@@ -39,7 +39,7 @@ export default function Footer() {
                 title="Our phone"
                 className="transition-colors duration-300 text-gray-400 hover:text-white-light"
               >
-                850-123-5021
+                (+380)097-466-5809
               </a>
             </div>
             <div className="flex">
@@ -50,7 +50,7 @@ export default function Footer() {
                 title="Our email"
                 className="transition-colors duration-300 text-gray-400 hover:text-white-light"
               >
-                info@lorem.mail
+                xboosthub@gmail.com
               </a>
             </div>
           </div>
