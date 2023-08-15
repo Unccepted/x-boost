@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+// import { data } from "./data";
 import {
   AreaChart,
   Area,
@@ -7,73 +8,107 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  Legend,
 } from "recharts";
 
 const data = [
   {
-    name: "Page A",
-    CompayA: 4000,
-    CompayB: 2400,
-    amt: 2400,
+    "До X-Boost": 10000,
+    "После X-Boost": null,
   },
   {
-    name: "Page B",
-    CompayA: 3000,
-    CompayB: 1398,
-    amt: 2210,
+    "До X-Boost": 20000,
+    "После X-Boost": null,
   },
   {
-    name: "Page C",
-    CompayA: 2000,
-    CompayB: 9800,
-    amt: 2290,
+    "До X-Boost": 30000,
+    "После X-Boost": null,
   },
   {
-    name: "Page D",
-    CompayA: 2780,
-    CompayB: 3908,
-    amt: 2000,
+    "До X-Boost": 24000,
+    "После X-Boost": null,
   },
   {
-    name: "Page E",
-    CompayA: 1890,
-    CompayB: 4800,
-    amt: 2181,
+    "До X-Boost": 28000,
+    "После X-Boost": null,
   },
   {
-    name: "Page F",
-    CompayA: 2390,
-    CompayB: 3800,
-    amt: 2500,
+    "До X-Boost": 35000,
+    "После X-Boost": 35000,
   },
   {
-    name: "Page G",
-    CompayA: 3490,
-    CompayB: 4300,
-    amt: 2100,
+    "До X-Boost": null,
+    "После X-Boost": 35000,
+  },
+  {
+    "До X-Boost": null,
+    "После X-Boost": 30000,
+  },
+  {
+    "До X-Boost": null,
+    "После X-Boost": 50000,
+  },
+  {
+    "До X-Boost": null,
+    "После X-Boost": 100000,
+  },
+  {
+    "До X-Boost": null,
+    "После X-Boost": 200000,
+  },
+  {
+    "До X-Boost": null,
+    "После X-Boost": 250000,
   },
 ];
 
 export function GrowChart() {
   return (
-    <AreaChart
-      width={500}
-      height={400}
-      data={data}
-      margin={{
-        top: 10,
-        right: 30,
-        left: 0,
-        bottom: 0,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Area type="monotone" dataKey="CompayA" stroke="#8884d8" fill="#8884d8" />
-      <Area type="monotone" dataKey="CompayB" stroke="#8884d8" fill="#8884d8" />
-    </AreaChart>
+    <section className="bg-gray-100 ">
+      <div className="flex flex-col container mx-auto px-4 py-8 ">
+        <div className="p-4">
+          <h2 className="w-1/2 text-6xl leading-tight uppercase tracking-tight font-medium mb-8 text-gray-900">
+            Увеличение продуктового роста в 10 раз за 3 месяца с помощью
+            X-Booost
+          </h2>
+        </div>
+        <div className="py-8 px-4 border rounded-xl bg-gray-100 shadow-md">
+          <ResponsiveContainer
+            width="100%"
+            height={400}
+            className={"flex mx-auto justify-center"}
+          >
+            <AreaChart
+              data={data}
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Area
+                type="monotone"
+                dataKey="До X-Boost"
+                stroke="#8884d8"
+                fill="blue"
+              />
+              <Area
+                type="monotone"
+                dataKey="После X-Boost"
+                stroke="#82ca9d"
+                fill="green"
+              />
+              <Legend verticalAlign="bottom" align="center" />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+    </section>
   );
 }
 // export function GrowChart() {

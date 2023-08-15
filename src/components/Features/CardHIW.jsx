@@ -2,14 +2,16 @@ import greenArrow from "../../svg/right-arrow-svgrepo-com.svg";
 
 export function CardHIW({ count, header, text, time, arrow }) {
   return (
-    <div class="w-full px-4 relative">
-      <div class="h-full p-4 pb-8 border shadow-sm shadow-gray-400 rounded-xl flex flex-col gap-y-2">
-        <div class="hidden lg:flex  h-16 w-16 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
+    <div className="w-full px-4 relative">
+      <div className="h-full p-4 pb-8 border shadow-sm shadow-gray-400 rounded-xl flex flex-col gap-y-2 bg-white">
+        <div className="hidden lg:flex  h-16 w-16 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
           <span className="text-3xl font-bold">{count}</span>
         </div>
-        <h3 class="text-2xl text-gray-900 leading-tight font-bold">{header}</h3>
+        <h3 className="text-2xl text-gray-900 leading-tight font-bold">
+          {header}
+        </h3>
         <span className=" text-xl font-medium text-green-600">{time}</span>
-        <p class="text-gray-500 font-medium">{text}</p>
+        <p className="text-gray-500 font-medium">{text}</p>
       </div>
       {arrow !== "hidden" && (
         <div

@@ -2,12 +2,12 @@ import { NumberComponent } from "./NumberComponent";
 
 export function SocialProof() {
   return (
-    <section id="why-x-boost" class="bg-gray-900">
-      <div class="container px-4 mx-auto py-16 lg:px-6">
+    <section id="why-x-boost" className="bg-gray-900">
+      <div className="container px-4 mx-auto py-16 lg:px-6">
         <div className=" text-white text-center lg:text-left text-3xl min-[420px]:text-4xl uppercase font-bold mb-16">
           Почему X-Boost?
         </div>
-        <div class="grid gap-10  grid-cols-1 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4 text-white mb-12">
+        <div className="grid gap-10  grid-cols-1 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4 text-white mb-12">
           <NumberComponent
             number={"780+"}
             type={"Создали видео для наших клиентов"}

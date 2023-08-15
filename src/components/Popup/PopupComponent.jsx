@@ -1,9 +1,41 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
 
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
+
 export function PopupComponent() {
   const { showModal, setShowModal } = useContext(ContextApp);
+
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      // Email is not in the correct format
+      console.log("Invalid email");
+      return;
+    } else {
+      console.log("Valid");
+      // try {
+      const docRef = await addDoc(collection(db, "emails"), {
+        email: email,
+      });
+      console.log("Document written with ID: ");
+      // } catch (e) {
+      //   console.error("Error adding document: ", e);
+      // }
+      // Save the email to Firestore
+    }
+  };
+
   return (
     <>
       {showModal ? (
@@ -18,7 +50,7 @@ export function PopupComponent() {
                     Рассылка от X-Boost
                   </h3>
                   <button
-                    class=" top-7 right-4 "
+                    className=" top-7 right-4 "
                     onClick={() => setShowModal(false)}
                   >
                     <CloseRoundedIcon
@@ -36,20 +68,13 @@ export function PopupComponent() {
                       Получай лучше кейсы!
                     </span>
                   </h3>
-                  {/* <p className="text-gray-500">
-                    Вы всегда будете в курсе новых событий компании и уникальных
-                    предложений для подписчиков.
-                  </p>
-                  <p className="text-gray-500">
-                    Отписаться можно в любой момент.
-                  </p> */}
                 </div>
                 {/*footer*/}
                 <div className="border-solid border-slate-200 rounded-b grid grid-cols-12 gap-4 px-6 py-4">
-                  <div class="relative col-span-8">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none ">
+                  <div className="relative col-span-8">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none ">
                       <svg
-                        class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                        className="w-4 h-4 text-gray-500 dark:text-gray-400"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -60,10 +85,11 @@ export function PopupComponent() {
                       </svg>
                     </div>
                     <input
-                      type="text"
-                      id="input-group-1"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      type="email"
+                      value={email}
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="name@mail.com"
+                      onChange={handleEmailChange}
                     />
                   </div>
                   <div className="col-span-4 ">
@@ -71,7 +97,8 @@ export function PopupComponent() {
                       className="w-full h-full bg-green-500 text-white active:bg-green-600 font-bold uppercase
                     text-sm rounded-md shadow-sm hover:shadow-lg"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      // onClick={() => setShowModal(false)}
+                      onClick={handleSubmit}
                     >
                       Подписаться
                     </button>

@@ -6,14 +6,14 @@ export const data = [
       { x: "Jan", y: 1 },
       { x: "Feb", y: 2 },
       { x: "Mar", y: 3 },
-      { x: "Apr", y: null }, // Invisible gap
+      { x: "Apr", y: 4 }, // Invisible gap
     ],
   },
   {
     id: "lineB",
     color: "red",
     data: [
-      { x: "Apr", y: null }, // Invisible gap
+      { x: "Apr", y: 4 }, // Invisible gap
       { x: "May", y: 5 },
       // ...
     ],

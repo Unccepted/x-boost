@@ -3,45 +3,45 @@ export default function Testemonial() {
   return (
     <section
       id="our-clients"
-      class="min-w-screen  bg-gray-50 flex items-center justify-center "
+      className="min-w-screen  bg-gray-50 flex items-center justify-center "
     >
-      <div class="w-full bg-white    px-5  md:py-24 text-gray-800">
-        <div class="w-full max-w-6xl mx-auto">
-          <div class="text-center max-w-xl mx-auto">
-            <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600">
+      <div className="w-full bg-white    px-5  md:py-24 text-gray-800">
+        <div className="w-full max-w-6xl mx-auto">
+          <div className="text-center max-w-xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 text-gray-600">
               Что про нас
               <br /> говорят
             </h1>
 
-            <div class="text-center mb-10">
-              <span class="inline-block w-1 h-1 rounded-full bg-emerald-800"></span>
-              <span class="inline-block w-3 h-1 rounded-full bg-emerald-800"></span>
-              <span class="inline-block w-40 h-1 rounded-full bg-emerald-700"></span>
-              <span class="inline-block w-3 h-1 rounded-full bg-emerald-800"></span>
-              <span class="inline-block w-1 h-1 rounded-full bg-emerald-800"></span>
+            <div className="text-center mb-10">
+              <span className="inline-block w-1 h-1 rounded-full bg-emerald-800"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-emerald-800"></span>
+              <span className="inline-block w-40 h-1 rounded-full bg-emerald-700"></span>
+              <span className="inline-block w-3 h-1 rounded-full bg-emerald-800"></span>
+              <span className="inline-block w-1 h-1 rounded-full bg-emerald-800"></span>
             </div>
           </div>
 
           {/* <!-- Container for the Testimonials --> */}
-          <div class="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
+          <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
             {/* <!-- First Testimonial --> */}
-            <div class="mb-12 md:mb-0">
-              <div class="mb-6 flex justify-center">
+            <div className="mb-12 md:mb-0">
+              <div className="mb-6 flex justify-center">
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  className="w-32 rounded-full shadow-lg dark:shadow-black/30"
                   alt="Client avatar"
                 />
               </div>
-              <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
+              <h5 className="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
+              <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
                 Graphic Designer
               </h6>
-              <p class="mb-4">
+              <p className="mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  class="inline-block h-7 w-7 pr-2"
+                  className="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
@@ -49,13 +49,13 @@ export default function Testemonial() {
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid commodi.
               </p>
-              <ul class="mb-0 flex items-center justify-center">
+              <ul className="mb-0 flex items-center justify-center">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -69,7 +69,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -83,7 +83,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -97,7 +97,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -111,7 +111,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                   </svg>
@@ -120,23 +120,23 @@ export default function Testemonial() {
             </div>
 
             {/* <!-- Second Testimonial --> */}
-            <div class="mb-12 md:mb-0">
-              <div class="mb-6 flex justify-center">
+            <div className="mb-12 md:mb-0">
+              <div className="mb-6 flex justify-center">
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  className="w-32 rounded-full shadow-lg dark:shadow-black/30"
                   alt=""
                 />
               </div>
-              <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
+              <h5 className="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
+              <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
                 Graphic Designer
               </h6>
-              <p class="mb-4">
+              <p className="mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  class="inline-block h-7 w-7 pr-2"
+                  className="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
@@ -144,13 +144,13 @@ export default function Testemonial() {
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid commodi.
               </p>
-              <ul class="mb-0 flex items-center justify-center">
+              <ul className="mb-0 flex items-center justify-center">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -164,7 +164,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -178,7 +178,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -192,7 +192,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -206,7 +206,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                   </svg>
@@ -215,23 +215,23 @@ export default function Testemonial() {
             </div>
 
             {/* <!-- Third Testimonial --> */}
-            <div class="mb-12 md:mb-0">
-              <div class="mb-6 flex justify-center">
+            <div className="mb-12 md:mb-0">
+              <div className="mb-6 flex justify-center">
                 <img
                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                  className="w-32 rounded-full shadow-lg dark:shadow-black/30"
                   alt=""
                 />
               </div>
-              <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
+              <h5 className="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
+              <h6 className="mb-4 font-semibold text-primary dark:text-primary-500">
                 Graphic Designer
               </h6>
-              <p class="mb-4">
+              <p className="mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  class="inline-block h-7 w-7 pr-2"
+                  className="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
@@ -239,13 +239,13 @@ export default function Testemonial() {
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid commodi.
               </p>
-              <ul class="mb-0 flex items-center justify-center">
+              <ul className="mb-0 flex items-center justify-center">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -259,7 +259,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -273,7 +273,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -287,7 +287,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -301,7 +301,7 @@ export default function Testemonial() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="h-5 w-5 text-yellow-500"
+                    className="h-5 w-5 text-yellow-500"
                   >
                     <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                   </svg>

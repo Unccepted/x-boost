@@ -5,42 +5,42 @@ import { CalendyButton } from "../Resusable/CalendyButton";
 
 function MoreLanguage() {
   return (
-    <div class="container my-24 mx-auto md:px-6">
-      <section class="text-center lg:text-left">
-        <div class="block rounded-lg bg-white  ">
-          <div class="flex flex-wrap-reverse items-center">
-            <div class="w-full lg:w-7/12">
-              <div class="py-12 md:px-12">
-                <h2 class="mb-6 pb-2 text-7xl font-bold text-gray-900">
+    <div className="container my-24 mx-auto md:px-6">
+      <section className="text-center lg:text-left">
+        <div className="block rounded-lg bg-white  ">
+          <div className="flex flex-wrap-reverse items-center">
+            <div className="w-full lg:w-7/12">
+              <div className="py-12 md:px-12">
+                <h2 className="mb-6 pb-2 text-7xl font-bold text-gray-900">
                   Контент на 22+ языках
                 </h2>
-                <p class="mb-6 pb-2 text-neutral-500 ">
+                <p className="mb-6 pb-2 text-neutral-500 ">
                   Откройте для своего бренда новые горизонты с нашим
                   многоязычным контентом. Наши творческие специалисты владеют
                   более чем 22 языками и создадут убедительный и аутентичный
                   контент, способный привлечь широкую аудиторию.
                 </p>
-                <div class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols px-6  mb-6">
-                  <div class="mb-4 w-full">
-                    <p class="flex">
+                <div className="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols px-6  mb-6">
+                  <div className="mb-4 w-full">
+                    <p className="flex">
                       <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Русский
                     </p>
                   </div>
-                  <div class="mb-4 w-full ">
-                    <p class="flex">
+                  <div className="mb-4 w-full ">
+                    <p className="flex">
                       <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Украинский
                     </p>
                   </div>
-                  <div class="mb-4 w-full">
-                    <p class="flex">
+                  <div className="mb-4 w-full">
+                    <p className="flex">
                       <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       Английский
                     </p>
                   </div>
-                  <div class="mb-4 w-full">
-                    <p class="flex">
+                  <div className="mb-4 w-full">
+                    <p className="flex">
                       <CheckCircleRoundedIcon className="text-green-400 mr-3" />
                       И другие.
                     </p>
@@ -52,16 +52,16 @@ function MoreLanguage() {
                 />
               </div>
             </div>
-            <div class="w-full lg:w-5/12">
+            <div className="w-full lg:w-5/12">
               <img
                 src={collageSmall}
                 alt="Trendy Pants and Shoes"
-                class="w-full lg:hidden rounded-lg "
+                className="w-full lg:hidden rounded-lg "
               />
               <img
                 src={collageBig}
                 alt="Trendy Pants and Shoes"
-                class="hidden lg:block w-full rounded-lg "
+                className="hidden lg:block w-full rounded-lg "
               />
             </div>
           </div>

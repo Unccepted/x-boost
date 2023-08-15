@@ -15,7 +15,7 @@ export function DropdownLink(props, { onClick }) {
     >
       <Link
         smooth
-        class="text-lg sm:text-2xl   py-4  font-normal flex justify-between"
+        className="text-lg sm:text-2xl   py-4  font-normal flex justify-between"
         to={props.link}
       >
         {props.text}

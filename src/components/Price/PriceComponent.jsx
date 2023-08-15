@@ -13,13 +13,13 @@ export function PriceComponent() {
   };
 
   return (
-    <section id="price" class="container px-4 mx-auto">
+    <section id="price" className="container px-4 mx-auto">
       <div className="py-12">
         <div className="flex">
           <div className="w-full">
             <div className="flex flex-col lg:flex-row lg:pl-8 justify-between items-center">
               <div>
-                <h2 class="text-center pb-8 text-5xl lg:text-6xl text-gray-900 font-bold tracking-tighter">
+                <h2 className="text-center pb-8 text-5xl lg:text-6xl text-gray-900 font-bold tracking-tighter">
                   Цена
                 </h2>
               </div>
@@ -30,7 +30,7 @@ export function PriceComponent() {
             <PriceHeader isMonthly={isMonthly} />
           </div>
         </div>
-        <div class="flex flex-nowrap xl:justify-center gap-8 pb-8 overflow-x-scroll lg:overflow-x-auto">
+        <div className="flex flex-nowrap xl:justify-center gap-8 pb-8 overflow-x-scroll lg:overflow-x-auto">
           <Prices
             isMonthly={isMonthly}
             discount={30}
@@ -59,7 +59,7 @@ export function PriceComponent() {
             hidden={true}
             price={"от 35"}
             plantLvl={"Маштабируемый план"}
-            array={["До 50 видео в ниделю"]}
+            array={["До 50 видео в неделю"]}
           />
         </div>
       </div>

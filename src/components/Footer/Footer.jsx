@@ -1,7 +1,7 @@
 import logo_img from "../../imgs/logo's-img.png";
 export default function Footer() {
   return (
-    <footer class="bg-green-dark ">
+    <footer className="bg-green-dark ">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
@@ -39,10 +39,10 @@ export default function Footer() {
                 title="Our phone"
                 className="transition-colors duration-300 text-gray-400 hover:text-white-light"
               >
-                (+380)097-466-5809
+                (+380) 97-466-5809
               </a>
             </div>
-            <div className="flex">
+            <div className="grid grid-cols-2">
               <p className="mr-1 text-white-light">Електроная Почта:</p>
               <a
                 href="mailto:info@lorem.mail"

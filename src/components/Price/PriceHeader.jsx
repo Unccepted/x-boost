@@ -6,7 +6,7 @@ export function PriceHeader(props) {
   return (
     <div className="w-full p-4 my-4  flex flex-col gap-2 lg:flex-row shadow-md rounded-2xl justify-between  bg-gray-100 lg:p-8">
       <div className="w-full lg:w-4/12">
-        <h3 class="text-xl md:text-2xl text-gray-900 font-bold">
+        <h3 className="text-xl md:text-2xl text-gray-900 font-bold">
           Во все тарифы уже включены:
         </h3>
         {props.isMonthly && (

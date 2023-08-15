@@ -83,7 +83,7 @@ export function Navigation() {
               </ul>
             </div>
             <button
-              class="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
+              className="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
               onClick={() => setNavmenu(!navmenu)}
             >
               <img src={memnuIcon} alt="menu icon" className="w-20 " />

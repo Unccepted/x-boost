@@ -10,12 +10,12 @@ export function DropdownNavigation(props) {
   const { navmenu, setNavmenu } = useContext(ContextApp);
   return (
     <nav
-      class={` ${
+      className={` ${
         props.navmenu ? "" : "hidden"
       } fixed top-0 left-0 z-50 w-full h-full bg-gray-900 bg-opacity-50`}
     >
-      <div class="fixed top-0 left-0 bottom-0 w-9/12 max-w-md bg-white p-4">
-        <div class="m-auto p-4 grid grid-cols-1 gap-8">
+      <div className="fixed top-0 left-0 bottom-0 w-9/12 max-w-md bg-white p-4">
+        <div className="m-auto p-4 grid grid-cols-1 gap-8">
           <div className="flex justify-between">
             <Link
               smooth
@@ -34,7 +34,7 @@ export function DropdownNavigation(props) {
               />
             </Link>
             <button
-              class=" top-7 right-4 "
+              className=" top-7 right-4 "
               onClick={() => props.setNavmenu(!props.navmenu)}
             >
               <CloseRoundedIcon
@@ -51,9 +51,9 @@ export function DropdownNavigation(props) {
             <DropdownLink text={"Как это работает"} link={"#how-its-work"} />
             <DropdownLink text={"Цена"} link={"#price"} />
           </ul>
-          <div class="flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className=" xl:flex  items-center justify-end w-full">
-              <button class="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md">
+              <button className="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md">
                 Начать
               </button>
             </div>
