@@ -12,7 +12,7 @@ import { SocialProof } from "./components/WhyX/SocialProof";
 import OurCases from "./components/Content/OurCases";
 import MoreLanguage from "./components/Features/MoreLanguage";
 import PopupComponent from "./components/Popup/PopupComponent.jsx";
-import { GrowChart } from "./components/Charts/GrowChart";
+// import { GrowChart } from "./components/Charts/GrowChart";
 // import Page_404 from "./components/Page_404";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Home />
       {/* <OurPartners /> */}
       <SocialProof />
-      <GrowChart />
+      {/* <GrowChart /> */}
       <OurCases />
       <MoreLanguage />
       <HowItWorks />

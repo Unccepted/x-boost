@@ -8,6 +8,18 @@ import { db } from "../firebase";
 export function PopupComponent() {
   const { showModal, setShowModal } = useContext(ContextApp);
 
+  // const addDocumentToFirestore = async () => {
+  //   const collectionRef = collection(db, "emails"); // Replace 'myCollection' with the name of your collection
+  //   try {
+  //     const docRef = await addDoc(collectionRef, {
+  //       // Provide the data for your document here
+  //       email: "Vtest@email.com",
+  //     });
+  //   } catch (error) {
+  //     console.error("Error adding document: ", error);
+  //   }
+  // };
+
   const [email, setEmail] = useState("");
 
   const handleEmailChange = (e) => {
@@ -24,14 +36,14 @@ export function PopupComponent() {
       return;
     } else {
       console.log("Valid");
-      // try {
-      const docRef = await addDoc(collection(db, "emails"), {
-        email: email,
-      });
-      console.log("Document written with ID: ");
-      // } catch (e) {
-      //   console.error("Error adding document: ", e);
-      // }
+      try {
+        const docRef = await addDoc(collection(db, "emails"), {
+          name: email,
+        });
+        console.log("Document written with ID: ");
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
       // Save the email to Firestore
     }
   };
@@ -74,7 +86,7 @@ export function PopupComponent() {
                   <div className="relative col-span-8">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none ">
                       <svg
-                        className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                        className="w-4 h-4 text-gray-500 "
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -87,7 +99,7 @@ export function PopupComponent() {
                     <input
                       type="email"
                       value={email}
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 focus:outline-none  focus:ring-1"
                       placeholder="name@mail.com"
                       onChange={handleEmailChange}
                     />

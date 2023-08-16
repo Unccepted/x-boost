@@ -5,9 +5,9 @@ import { CalendyButton } from "../Resusable/CalendyButton";
 
 export function Prices(props) {
   return (
-    <div className="w-64 flex-none lg:flex lg:w-72">
+    <div className="w-64 flex-none 2xl:flex-1 2xl:flex lg:flex lg:w-72  2xl:w-1/4">
       <div
-        className={`h-full flex flex-col items-center ${
+        className={`h-full w-full flex flex-col items-center ${
           props.hidden ? "pt-8" : "pt-0 "
         } px-8 pb-8 bg-white rounded-md shadow-md border-x-2 ${props.scale}  
         ${
