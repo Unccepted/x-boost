@@ -13,7 +13,7 @@ export function VideoHero() {
   return (
     <div className="w-full lg:w-1/2 flex items-center justify-center h-96">
       <div className="lg:mr-0 flex justify-center">
-        <div className="relative max-h-max rounded-xl  w-40 lg:w-60 border-2 left-2  border-white shadow-lg shadow-gray-400">
+        <div className="relative max-h-max rounded-xl  w-40 md:w-52 lg:w-60 border-2 left-2  border-white shadow-lg shadow-gray-400">
           <Icons
             position={"-left-16 -top-4 -rotate-6 lg:-left-24  w-14 lg:w-20"}
             icon={youtubeIcon}

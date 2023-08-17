@@ -1,5 +1,5 @@
 import logo_img from "../../imgs/logo's-img.png";
-import xImg from "../../imgs/Twitter-X-Logo-PNG.jpg";
+import xIcon from "../../svg/Twitter X.svg";
 import instagramIcon from "../../svg/instagram-svgrepo-com.svg";
 import telegramIcon from "../../svg/telegram-alt-svgrepo-com.svg";
 import youtubeIcon from "../../svg/youtube-168-svgrepo-com.svg";
@@ -51,8 +51,8 @@ export default function Footer() {
                 (+380) 97-466-5809
               </a>
             </div>
-            <div className="grid grid-cols-2">
-              <p className="mr-1 text-white-light">Електроная Почта:</p>
+            <div className="flex">
+              <p className="mr-1 text-white-light ">Електроная Почта:</p>
               <a
                 href="mailto:info@lorem.mail"
                 aria-label="Our email"
@@ -64,14 +64,14 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <span className="text-base font-bold tracking-wide text-emerald-50">
+            <span className="text-base font-bold tracking-wide text-emerald-50 ">
               Мы в Соц.Сетях
             </span>
-            <div className="flex flex-col justify-items-start items-center mt-1 gap-1">
+            <div className="flex justify-start items-center gap-4">
               <Icons src={instagramIcon} href={""} />
               <Icons src={telegramIcon} href={""} />
               <Icons src={youtubeIcon} href={""} />
-              <Icons src={xImg} href={""} />
+              <Icons src={xIcon} href={""} />
               <Icons src={tiktokIcon} href={""} />
             </div>
           </div>

@@ -2,9 +2,13 @@ import caseOneVideo from "../../video/Case-1.mp4";
 import caseTwoVideo from "../../video/Case-2.mp4";
 import caseThreeVideo from "../../video/Case-3.mp4";
 
-import tatuImg from "../../imgs/tatuImg.jpg";
-import waterDImg from "../../imgs/waterD.jpg";
+import tatuImg from "../../imgs/tatuImg.png";
+// import waterDImg from "../../imgs/waterD.jpg";
 import appImg from "../../imgs/dating.png";
+
+import clientsIcon from "../../svg/clients-icon.svg";
+import deliveryIcon from "../../svg/delivery-icon.svg";
+import appIcon from "../../svg/appIcon.svg";
 
 import React from "react";
 import { Cases } from "./Cases";
@@ -22,35 +26,49 @@ function OurCases() {
         </div>
         <div>
           <Cases
-            niche={"Тату-искусство"}
+            niche={"Тату-салон"}
+            text={
+              "Уютное место для нанесения оригинальных татуировок опытными мастерами с индивидуальным подходом."
+            }
             metric="Увеличение CTR"
             src={caseOneVideo}
             number={110}
-            salesType={"человек в месяц"}
+            salesType={"Клиентов/ мес"}
             procent={"110%%"}
             caseIcon={tatuImg}
-            alt="tatu black icon"
+            icon={clientsIcon}
+            iconAlt={"Иконка групы клиентов"}
+            alt="Черная иконка тату-салона"
           />
           <Cases
             reverse={true}
-            niche={"Оборудование для воды"}
+            niche={"Декоративные Чехлы для Кулера"}
+            text={
+              "Изготовление стильных и функциональных подставок любой формы и размера под индивидуальный заказ."
+            }
             metric="Повышение рентабельности"
             src={caseTwoVideo}
             number={36}
-            salesType={"заказов в месяц"}
+            salesType={"Заказы/мес"}
             procent={"40%%"}
-            caseIcon={waterDImg}
-            alt="color water despencer icon"
+            // caseIcon={null}
+            icon={deliveryIcon}
+            iconAlt={"Иконка коробок"}
           />
           <Cases
-            niche={"Знакомства и отношения"}
+            niche={"Приложение для Знакомств и Отношений"}
+            text={
+              "Удобный инструмент для поиска партнера и развития отношений в цифровую эпоху."
+            }
             metric="Снижение CPA"
             src={caseThreeVideo}
             number={6750}
-            salesType={"ежедневная активная аудитория"}
+            salesType={"Ежедневный Онлайн"}
             procent={"65%"}
             caseIcon={appImg}
-            alt="dating ai app icon"
+            icon={appIcon}
+            iconAlt={"Иконка клиентов онлайн"}
+            alt="Иконка приложение для Знакомств"
           />
         </div>
       </div>

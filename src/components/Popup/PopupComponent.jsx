@@ -8,18 +8,6 @@ import { db } from "../firebase";
 export function PopupComponent() {
   const { showModal, setShowModal } = useContext(ContextApp);
 
-  // const addDocumentToFirestore = async () => {
-  //   const collectionRef = collection(db, "emails"); // Replace 'myCollection' with the name of your collection
-  //   try {
-  //     const docRef = await addDoc(collectionRef, {
-  //       // Provide the data for your document here
-  //       email: "Vtest@email.com",
-  //     });
-  //   } catch (error) {
-  //     console.error("Error adding document: ", error);
-  //   }
-  // };
-
   const [email, setEmail] = useState("");
 
   const handleEmailChange = (e) => {
@@ -36,11 +24,14 @@ export function PopupComponent() {
       return;
     } else {
       console.log("Valid");
+      const currentTime = new Date().toISOString();
+      // var emailKey = email.replace(/\./g, "_");
+
       try {
-        const docRef = await addDoc(collection(db, "emails"), {
-          name: email,
+        const docRef = await addDoc(collection(db, "subscribers"), {
+          email: email,
+          date: currentTime,
         });
-        console.log("Document written with ID: ");
       } catch (e) {
         console.error("Error adding document: ", e);
       }

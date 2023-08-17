@@ -2,6 +2,7 @@ import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import collageSmall from "../../imgs/Collage.png";
 import collageBig from "../../imgs/CollageB.png";
 import { CalendyButton } from "../Resusable/CalendyButton";
+import languageGroupImg from "../../imgs/languange.png";
 
 function MoreLanguage() {
   return (
@@ -14,12 +15,19 @@ function MoreLanguage() {
                 <h2 className="mb-6 pb-2 text-7xl font-bold text-gray-900">
                   Контент на 22+ языках
                 </h2>
-                <p className="mb-6 pb-2 text-neutral-500 ">
+                <p className="mb-4 text-neutral-500 ">
                   Откройте для своего бренда новые горизонты с нашим
                   многоязычным контентом. Наши творческие специалисты владеют
                   более чем 22 языками и создадут убедительный и аутентичный
                   контент, способный привлечь широкую аудиторию.
                 </p>
+                <div className="flex sm:justify-start justify-center">
+                  <img
+                    src={languageGroupImg}
+                    alt="флаги стран"
+                    className="w-auto h-16 sm:h-20 mb-4"
+                  />
+                </div>
                 <div className="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 grid-flow-cols px-6  mb-6">
                   <div className="mb-4 w-full">
                     <p className="flex">
