@@ -1,12 +1,13 @@
-import youtubeIcon from "../../imgs/youtube-icon-svgrepo-com.png";
-import tiktokIcon from "../../imgs/tictokIcon.png";
-import instagramIcon from "../../imgs/instagram-1-svgrepo-com.png";
-import facebookIcon from "../../imgs/facebook-svgrepo-com.png";
-import telegramIcon from "../../imgs/telegram-svgrepo-com.png";
-import snapchatIcon from "../../imgs/snapchat-snap-chat-svgrepo-com.png";
-import shareIcon from "../../imgs/share-arrow-svgrepo-com.png";
+import youtubeIcon from "../../imgs/youtube-icon-svgrepo-com.webp";
+import tiktokIcon from "../../imgs/tictokIcon.webp";
+import instagramIcon from "../../imgs/instagram-1-svgrepo-com.webp";
+import facebookIcon from "../../imgs/facebook-svgrepo-com.webp";
+import telegramIcon from "../../imgs/telegram-svgrepo-com.webp";
+import snapchatIcon from "../../imgs/snapchat-snap-chat-svgrepo-com.webp";
+import shareIcon from "../../imgs/share-arrow-svgrepo-com.webp";
 
 import mainVideo from "../../video/main-video.mp4";
+import mainVideoWebM from "../../video/main-video.webm";
 import { Icons } from "./Icons";
 
 export function VideoHero() {
@@ -55,12 +56,14 @@ export function VideoHero() {
             alt={"snapchat icon"}
           />
           <video
-            src={mainVideo}
             className="rounded-xl w-full h-full shadow-md "
             autoPlay
             loop
             muted
-          />
+          >
+            <source src={mainVideo} type="video/mp4" />
+            <source src={mainVideoWebM} type="video/webm" />
+          </video>
         </div>
       </div>
     </div>

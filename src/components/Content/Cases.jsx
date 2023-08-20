@@ -19,9 +19,9 @@ export function Cases(props) {
                 : "lg:rounded-e-3xl lg:ml-auto"
             }`}
           >
-            <h1 className="text-2xl lg:text-4xl text-gray-900 md:leading-snug tracking-tighter font-black">
+            <h2 className="text-2xl lg:text-4xl text-gray-900 md:leading-snug tracking-tighter font-black">
               {props.niche}
-            </h1>
+            </h2>
             <p className="text-lg text-gray-900 leading-tight tracking-tight lg:text-2xl mt-1 lg:mt-4">
               {props.text}
             </p>
@@ -63,7 +63,7 @@ export function Cases(props) {
               <div className="bg-white  rounded-md">
                 <img src={props.icon} alt={props.iconAlt} className="h-12" />
               </div>
-              <div className="ml-6 flex gap-2">
+              <div className="ml-6 flex gap-2 items-center">
                 <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">
                   {props.number}
                 </h3>

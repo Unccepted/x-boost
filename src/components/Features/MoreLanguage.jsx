@@ -1,8 +1,8 @@
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
-import collageSmall from "../../imgs/Collage.png";
-import collageBig from "../../imgs/CollageB.png";
+import collageSmall from "../../imgs/Collage.webp";
+import collageBig from "../../imgs/CollageB.webp";
 import { CalendyButton } from "../Resusable/CalendyButton";
-import languageGroupImg from "../../imgs/languange.png";
+import languageGroupImg from "../../imgs/languange.webp";
 
 function MoreLanguage() {
   return (

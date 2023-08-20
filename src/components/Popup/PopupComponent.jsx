@@ -2,13 +2,20 @@ import React, { useContext, useState } from "react";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
 
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import {
+  collection,
+  addDoc,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore/lite";
+import { db } from "../../firebase/firebase";
 
 export function PopupComponent() {
   const { showModal, setShowModal } = useContext(ContextApp);
-
   const [email, setEmail] = useState("");
+  const [valid, setValid] = useState(null);
+  const [exist, setExist] = useState(null);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -17,15 +24,25 @@ export function PopupComponent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      // Email is not in the correct format
-      console.log("Invalid email");
-      return;
+    // Получил коллекцию из firebase
+    const subscribersRef = collection(db, "subscribers");
+    //Проверка полей в коллекции
+    const emailQuery = query(subscribersRef, where("email", "==", email));
+
+    //улословие
+    const querySnapshot = await getDocs(emailQuery);
+    if (!querySnapshot.empty) {
+      setExist(true);
     } else {
-      console.log("Valid");
+      setExist(false);
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setValid(false);
+    } else {
       const currentTime = new Date().toISOString();
-      // var emailKey = email.replace(/\./g, "_");
 
       try {
         const docRef = await addDoc(collection(db, "subscribers"), {
@@ -35,7 +52,13 @@ export function PopupComponent() {
       } catch (e) {
         console.error("Error adding document: ", e);
       }
-      // Save the email to Firestore
+      setValid(true);
+
+      //! Close window after a user type an email correctly and submit to the db.
+      // setTimeout(() => {
+      //   setEmail("");
+      //   setShowModal(false);
+      // }, 2000);
     }
   };
 
@@ -73,7 +96,7 @@ export function PopupComponent() {
                   </h3>
                 </div>
                 {/*footer*/}
-                <div className="border-solid border-slate-200 rounded-b grid grid-cols-12 gap-4 px-6 py-4">
+                <form className="border-solid border-slate-200 rounded-b grid grid-cols-12 gap-4 px-6 py-4">
                   <div className="relative col-span-8">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none ">
                       <svg
@@ -90,7 +113,13 @@ export function PopupComponent() {
                     <input
                       type="email"
                       value={email}
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 focus:outline-none  focus:ring-1"
+                      className={`bg-gray-50 border   text-sm rounded-lg ${
+                        valid === null
+                          ? "focus:ring-blue-500 focus:border-blue-500 border-gray-300 text-gray-900"
+                          : valid
+                          ? "focus:ring-green-500 focus:border-green-500 border-green-500 text-green-500"
+                          : "focus:ring-red-500 focus:border-red-500 border-red-500 text-red-500"
+                      }  block w-full pl-10 p-2.5 focus:outline-none  focus:ring-1`}
                       placeholder="name@mail.com"
                       onChange={handleEmailChange}
                     />
@@ -106,6 +135,27 @@ export function PopupComponent() {
                       Подписаться
                     </button>
                   </div>
+                </form>
+                {/* Show user State of their email */}
+                <div className="px-6 flex-auto">
+                  {valid === null ? null : valid ? (
+                    exist ? (
+                      <p className="mb-4 text-sm text-green-600 dark:text-green-500">
+                        Эта почта уже подписана на наши обновления
+                      </p>
+                    ) : (
+                      <p className="mb-4 text-sm text-green-600 dark:text-green-500">
+                        <span className="font-medium">Успешно!</span> Ваша
+                        электронная почта подтверждена, подписка активирована!
+                      </p>
+                    )
+                  ) : (
+                    <p className="mb-4 text-md text-red-600 dark:text-red-500">
+                      <span className="font-medium">Упс!</span> Введенный email
+                      недействителен. Пожалуйста, проверьте правильность
+                      написания.
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

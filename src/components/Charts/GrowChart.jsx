@@ -8,106 +8,58 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from "recharts";
 
 const data = [
-  {
-    "До X-Boost": 10000,
-    "После X-Boost": null,
-  },
-  {
-    "До X-Boost": 20000,
-    "После X-Boost": null,
-  },
-  {
-    "До X-Boost": 30000,
-    "После X-Boost": null,
-  },
-  {
-    "До X-Boost": 24000,
-    "После X-Boost": null,
-  },
-  {
-    "До X-Boost": 28000,
-    "После X-Boost": null,
-  },
-  {
-    "До X-Boost": 35000,
-    "После X-Boost": 35000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 35000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 30000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 50000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 100000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 200000,
-  },
-  {
-    "До X-Boost": null,
-    "После X-Boost": 250000,
-  },
+  { "До X-Boost": 0 },
+  { "До X-Boost": 1000 },
+  { "До X-Boost": 2000 },
+  { "До X-Boost": 3000 },
+  { "До X-Boost": 4000 },
+  { "До X-Boost": 15000 },
+  { "До X-Boost": 26000 },
+  { "До X-Boost": 17000 },
+  { "До X-Boost": 24000 },
+  { "До X-Boost": 30000 },
+  { "До X-Boost": 45000 },
+  { "До X-Boost": 60000 },
+  { "До X-Boost": 105000 },
+  { "До X-Boost": 120000 },
+  { "До X-Boost": 90000 },
+  { "До X-Boost": 75000 },
+
+  // { "До X-Boost": 15000 },
 ];
 
 export function GrowChart() {
+  const formatYAxis = (tickItem) => {
+    return `${tickItem}$`;
+  };
   return (
-    <section className="bg-gray-100 ">
-      <div className="flex flex-col container mx-auto px-4 py-8 ">
-        <div className="p-4">
-          <h2 className="w-1/2 text-6xl leading-tight uppercase tracking-tight font-medium mb-8 text-gray-900">
-            Увеличение продуктового роста в 10 раз за 3 месяца с помощью
-            X-Booost
-          </h2>
-        </div>
-        <div className="py-8 px-4 border rounded-xl bg-gray-100 shadow-md">
-          <ResponsiveContainer
-            width="100%"
-            height={400}
-            className={"flex mx-auto justify-center"}
-          >
-            <AreaChart
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="До X-Boost"
-                stroke="#8884d8"
-                fill="blue"
-              />
-              <Area
-                type="monotone"
-                dataKey="После X-Boost"
-                stroke="#82ca9d"
-                fill="green"
-              />
-              <Legend verticalAlign="bottom" align="center" />
-            </AreaChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
+    <section className="mx-4 ">
+      <ResponsiveContainer width={1280} height={400} className={"mx-auto p-4 "}>
+        <AreaChart
+          data={data}
+          margin={{
+            top: 10,
+            right: 30,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis tickFormatter={formatYAxis} />
+          <Tooltip />
+          <Area
+            type="linear"
+            dataKey="До X-Boost"
+            stroke="#8884d8"
+            fill="blue"
+          />
+          {/* <Legend verticalAlign="bottom" align="center" /> */}
+        </AreaChart>
+      </ResponsiveContainer>
     </section>
   );
 }

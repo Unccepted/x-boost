@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import logo_img from "../../imgs/logo's-img.png";
-import logo_text from "../../imgs/logo's-text.png";
+import logo_img from "../../imgs/logo's-img.webp";
+import logo_text from "../../imgs/logo's-text.webp";
 import { DropdownLink } from "./DropdownLink";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
+import { CalendyButton } from "../Resusable/CalendyButton";
 
 export function DropdownNavigation(props) {
   const { navmenu, setNavmenu } = useContext(ContextApp);
@@ -53,9 +54,10 @@ export function DropdownNavigation(props) {
           </ul>
           <div className="flex flex-wrap">
             <div className=" xl:flex  items-center justify-end w-full">
-              <button className="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md">
-                Начать
-              </button>
+              <CalendyButton
+                buttonText="Начать"
+                className="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+              />
             </div>
           </div>
         </div>

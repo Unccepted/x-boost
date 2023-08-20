@@ -7,9 +7,9 @@ export function CardHIW({ count, header, text, time, arrow }) {
         <div className="hidden lg:flex  h-16 w-16 mx-auto items-center justify-center text-white bg-green-500 rounded-lg">
           <span className="text-3xl font-bold">{count}</span>
         </div>
-        <h3 className="text-2xl text-gray-900 leading-tight font-bold">
+        <h2 className="text-2xl text-gray-900 leading-tight font-bold">
           {header}
-        </h3>
+        </h2>
         <span className=" text-xl font-medium text-green-600">{time}</span>
         <p className="text-gray-500 font-medium">{text}</p>
       </div>

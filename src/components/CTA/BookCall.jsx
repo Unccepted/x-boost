@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import mainVideo from "../../video/main-video.mp4";
+import mainVideoWebM from "../../video/main-video.webm";
 import { CalendyButton } from "../Resusable/CalendyButton";
 import { ContextApp } from "../ContextAPI";
 
@@ -40,12 +41,14 @@ function BookCall() {
         <div className="w-full hidden lg:flex  lg:col-span-5  justify-center">
           <div className="h-full  rounded-xl  w-72  shadow-md  shadow-slate-700">
             <video
-              src={mainVideo}
               className="rounded-xl w-72 h-full object-cover"
               autoPlay
               loop
               muted
-            />
+            >
+              <source src={mainVideo} type="video/mp4" />
+              <source src={mainVideoWebM} type="video/webm" />
+            </video>
           </div>
         </div>
       </div>

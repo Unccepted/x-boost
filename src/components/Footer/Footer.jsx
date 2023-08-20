@@ -1,4 +1,4 @@
-import logo_img from "../../imgs/logo's-img.png";
+import logo_img from "../../imgs/logo's-img.webp";
 import xIcon from "../../svg/Twitter X.svg";
 import instagramIcon from "../../svg/instagram-svgrepo-com.svg";
 import telegramIcon from "../../svg/telegram-alt-svgrepo-com.svg";
@@ -10,10 +10,10 @@ export default function Footer() {
   return (
     <footer className="bg-green-dark ">
       <div className="container px-8 pt-4 mx-auto">
-        <h3>
+        <h1>
           <a
             href="/"
-            aria-label="Go home"
+            aria-label="X-Boost"
             title="Company"
             className="inline-flex items-center"
           >
@@ -22,7 +22,7 @@ export default function Footer() {
               X-BOOST
             </span>
           </a>
-        </h3>
+        </h1>
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <div className="mt-6 lg:max-w-sm">
@@ -43,9 +43,8 @@ export default function Footer() {
             <div className="flex">
               <p className="mr-1 text-white-light">Телефон:</p>
               <a
-                href="tel:850-123-5021"
-                aria-label="Our phone"
-                title="Our phone"
+                href="tel:(+380)97-466-5809"
+                aria-label="(+380)97-466-5809"
                 className="transition-colors duration-300 text-gray-400 hover:text-white-light"
               >
                 (+380) 97-466-5809
@@ -54,16 +53,15 @@ export default function Footer() {
             <div className="flex">
               <p className="mr-1 text-white-light ">Електроная Почта:</p>
               <a
-                href="mailto:info@lorem.mail"
-                aria-label="Our email"
-                title="Our email"
+                href="mailto:xboosthub@gmail.com"
+                aria-label=" xboosthub@gmail.com"
                 className="transition-colors duration-300 text-gray-400 hover:text-white-light"
               >
                 xboosthub@gmail.com
               </a>
             </div>
           </div>
-          <div>
+          {/* <div>
             <span className="text-base font-bold tracking-wide text-emerald-50 ">
               Мы в Соц.Сетях
             </span>
@@ -74,7 +72,7 @@ export default function Footer() {
               <Icons src={xIcon} href={""} />
               <Icons src={tiktokIcon} href={""} />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
           <p className="text-sm text-gray-400">

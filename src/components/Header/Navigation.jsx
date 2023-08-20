@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { ContextApp } from "../ContextAPI";
 
-import logo_img from "../../imgs/logo's-img.png";
-import logo_text from "../../imgs/logo's-text.png";
+import logo_img from "../../imgs/logo's-img.webp";
+import logo_text from "../../imgs/logo's-text.webp";
 import memnuIcon from "../../svg/menu-icon.svg";
 import { DropdownNavigation } from "./DropdownNavigation";
 import { Links } from "./Links";

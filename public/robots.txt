@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow: /private
+Allow: / 
 Sitemap: http://www.xboosthub.com/sitemap.xml

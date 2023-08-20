@@ -2,9 +2,9 @@ import caseOneVideo from "../../video/Case-1.mp4";
 import caseTwoVideo from "../../video/Case-2.mp4";
 import caseThreeVideo from "../../video/Case-3.mp4";
 
-import tatuImg from "../../imgs/tatuImg.png";
+import tatuImg from "../../imgs/tatuImg.webp";
 // import waterDImg from "../../imgs/waterD.jpg";
-import appImg from "../../imgs/dating.png";
+import appImg from "../../imgs/dating.webp";
 
 import clientsIcon from "../../svg/clients-icon.svg";
 import deliveryIcon from "../../svg/delivery-icon.svg";
