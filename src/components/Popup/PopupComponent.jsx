@@ -72,7 +72,7 @@ export function PopupComponent() {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between px-6 py-4 rounded-t">
-                  <h3 className=" text-2xl leading-tight font-bold tracking-tight text-gray-800 uppercase">
+                  <h3 className="text-xl sm:text-2xl leading-tight font-bold tracking-tight text-gray-800 uppercase">
                     Рассылка от X-Boost
                   </h3>
                   <button
@@ -87,17 +87,17 @@ export function PopupComponent() {
                 </div>
                 {/*body*/}
                 <div className="relative px-6 flex-auto">
-                  <h3 className=" text-gray-500 text-lg leading-relaxed">
+                  <h3 className=" text-gray-500 text-md sm:text-lg leading-relaxed">
                     Узнай первым про новые фишки вертикального контента!{" "}
-                    <span className="text-xl text-green-400">
+                    <span className="text-lg sm:text-xl text-green-400">
                       {" "}
                       Получай лучше кейсы!
                     </span>
                   </h3>
                 </div>
                 {/*footer*/}
-                <form className="border-solid border-slate-200 rounded-b grid grid-cols-12 gap-4 px-6 py-4">
-                  <div className="relative col-span-8">
+                <form className="border-solid border-slate-200 rounded-b grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-12 gap-4 px-6 py-4">
+                  <div className="relative sm:col-span-8">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none ">
                       <svg
                         className="w-4 h-4 text-gray-500 "
@@ -124,10 +124,10 @@ export function PopupComponent() {
                       onChange={handleEmailChange}
                     />
                   </div>
-                  <div className="col-span-4 ">
+                  <div className="sm:col-span-4 ">
                     <button
                       className="w-full h-full bg-green-500 text-white active:bg-green-600 font-bold uppercase
-                    text-sm rounded-md shadow-sm hover:shadow-lg"
+                    text-sm rounded-md shadow-sm hover:shadow-lg "
                       type="button"
                       // onClick={() => setShowModal(false)}
                       onClick={handleSubmit}

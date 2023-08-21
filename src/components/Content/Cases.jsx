@@ -50,26 +50,33 @@ export function Cases(props) {
             props.reverse && "lg:order-1"
           }`}
         >
-          <video
-            src={props.src}
-            className="rounded-xl  w-72"
-            autoPlay
-            loop
-            muted
-          />
-          <div className="w-72 z-10 bg-white border border-gray-200 rounded-xl shadow p-6  ">
-            {/* <div className="flex items-center justify-between w-full sm:w-full"> */}
-            <div className="flex items-center">
-              <div className="bg-white  rounded-md">
-                <img src={props.icon} alt={props.iconAlt} className="h-12" />
-              </div>
-              <div className="ml-6 flex gap-2 items-center">
-                <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">
-                  {props.number}
-                </h3>
-                <p className="text-gray-600 text-sm tracking-normal font-normal leading-5">
-                  {props.salesType}
-                </p>
+          <div className="relative shadow border bg-white p-2 rounded-xl">
+            <div className="absolute -top-4 right-1/3 mx-auto ">
+              <h2 className="uppercase p-2 text-xl font-bold text-white bg-green-500 rounded-2xl border-green-600 border shadow shadow-green-600">
+                x-boost
+              </h2>
+            </div>
+            <video
+              src={props.src}
+              className="rounded-t-lg  w-72"
+              autoPlay
+              loop
+              muted
+            />
+            <div className="w-72 border rounded-b-lg p-6  ">
+              {/* <div className="flex items-center justify-between w-full sm:w-full"> */}
+              <div className="flex items-center">
+                <div className="bg-white  rounded-md">
+                  <img src={props.icon} alt={props.iconAlt} className="h-12" />
+                </div>
+                <div className="ml-6 flex gap-2 items-center">
+                  <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">
+                    {props.number}
+                  </h3>
+                  <p className="text-gray-600 text-sm tracking-normal font-normal leading-5">
+                    {props.salesType}
+                  </p>
+                </div>
               </div>
             </div>
             {/* <div>
