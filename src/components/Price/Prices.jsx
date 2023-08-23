@@ -16,6 +16,7 @@ export function Prices(props) {
         } px-8 pb-8 bg-white rounded ${props.scale}  
         `}
       >
+        {/* Скидка в плане */}
         {!props.hidden ? (
           props.isMonthly ? (
             <div className="py-2 mb-2 border w-full rounded-es-lg rounded-ee-lg text-center text-white border-white-fade shadow-sm bg-green-400 cursor-default">
@@ -40,7 +41,10 @@ export function Prices(props) {
         {props.isMonthly && !props.hidden ? (
           <div className="mb-1 lg:mb-4 flex gap-1">
             <span className="text-3xl lg:text-5xl text-gray-900 font-medium">
-              {(props.price * (100 - props.discount)) / 100}
+              {
+                props.discountPrice
+                // (props.price * (100 - props.discount)) / 100
+              }
             </span>
             <span className="text-xl text-gray-900 font-medium">$</span>
             <span className="text-xl text-gray-900 font-medium">/мес.</span>

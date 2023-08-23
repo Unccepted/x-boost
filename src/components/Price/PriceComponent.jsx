@@ -12,6 +12,7 @@ export function PriceComponent() {
     setIsMonthly(isChecked);
   };
 
+  console.log(Math.ceil(216 / 10) * 10);
   return (
     <section id="price" className="container px-4 mx-auto">
       <div className="py-12">
@@ -33,33 +34,36 @@ export function PriceComponent() {
         <div className="flex flex-nowrap pt-4 xl:justify-between gap-8 pb-8 overflow-x-scroll xl:overflow-x-auto">
           <Prices
             isMonthly={isMonthly}
-            discount={30}
-            price={520}
+            discount={10}
             plantLvl={"Базовый План"}
-            array={["15 видео", "1 актер", "Базовое отслеживание метрик"]}
-          />
-          <Prices
-            isMonthly={isMonthly}
-            discount={20}
-            price={980}
-            best={true}
-            plantLvl={"Продвинутый план"}
-            // scale={"scale-105"}
-            array={["30 видео", "2 актерa", "Продвинутое отслеживание метрик"]}
+            price={180}
+            discountPrice={160}
+            array={["4 концепта", "2 актера", "8 готовых видео"]}
           />
           <Prices
             isMonthly={isMonthly}
             discount={10}
-            price={1560}
-            plantLvl={"Премиум план"}
-            array={["45 видео", "до 4 актеров", "Глубокое отслеживание метрик"]}
+            price={310}
+            discountPrice={290}
+            best={true}
+            plantLvl={"Продвинутый план"}
+            // scale={"scale-105"}
+            array={["8 концептов", "4 актера", "16 готовых видео"]}
           />
           <Prices
-            isMonthly={true}
+            isMonthly={isMonthly}
+            discount={10}
+            price={490}
+            discountPrice={450}
+            plantLvl={"Премиум план"}
+            array={["16 концепов", "8 актеров", "32 готовых видео"]}
+          />
+          <Prices
+            isMonthly={false}
             hidden={true}
-            price={"от 35"}
+            price={"от 15"}
             plantLvl={"Маштабируемый план"}
-            array={["До 50 видео в неделю"]}
+            array={["Если вы тестируете болеше 50 креативов в неделю"]}
           />
         </div>
       </div>
