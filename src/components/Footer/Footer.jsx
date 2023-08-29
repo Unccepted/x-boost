@@ -1,9 +1,10 @@
-import logo_img from "../../imgs/logo's-img.webp";
-import xIcon from "../../svg/Twitter X.svg";
-import instagramIcon from "../../svg/instagram-svgrepo-com.svg";
-import telegramIcon from "../../svg/telegram-alt-svgrepo-com.svg";
-import youtubeIcon from "../../svg/youtube-168-svgrepo-com.svg";
-import tiktokIcon from "../../svg/tiktok-svgrepo-com.svg";
+/* eslint-disable no-unused-vars */
+import logo_img from "../../resources/imgs/logo's-img.webp";
+import xIcon from "../../resources/svg/Twitter X.svg";
+import instagramIcon from "../../resources/svg/instagram-svgrepo-com.svg";
+import telegramIcon from "../../resources/svg/telegram-alt-svgrepo-com.svg";
+import youtubeIcon from "../../resources/svg/youtube-168-svgrepo-com.svg";
+import tiktokIcon from "../../resources/svg/tiktok-svgrepo-com.svg";
 import { Icons } from "./Icons";
 
 export default function Footer() {

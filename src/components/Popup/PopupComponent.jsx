@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useState } from "react";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
@@ -9,7 +10,7 @@ import {
   where,
   getDocs,
 } from "firebase/firestore/lite";
-import { db } from "../../firebase/firebase";
+import { db } from "../../services/firebase/firebase";
 
 export function PopupComponent() {
   const { showModal, setShowModal } = useContext(ContextApp);

@@ -1,6 +1,6 @@
 import React from "react";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
-import lockIcon from "../../svg/lock-svgrepo-com.svg";
+import lockIcon from "../../resources/svg/lock-svgrepo-com.svg";
 import { CalendyButton } from "../Resusable/CalendyButton";
 
 export function Prices(props) {

@@ -1,13 +1,13 @@
-import youtubeIcon from "../../imgs/youtube-icon-svgrepo-com.webp";
-import tiktokIcon from "../../imgs/tictokIcon.webp";
-import instagramIcon from "../../imgs/instagram-1-svgrepo-com.webp";
-import facebookIcon from "../../imgs/facebook-svgrepo-com.webp";
-import telegramIcon from "../../imgs/telegram-svgrepo-com.webp";
-import snapchatIcon from "../../imgs/snapchat-snap-chat-svgrepo-com.webp";
-import shareIcon from "../../imgs/share-arrow-svgrepo-com.webp";
+import youtubeIcon from "../../resources/imgs/youtube-icon-svgrepo-com.webp";
+import tiktokIcon from "../../resources/imgs/tictokIcon.webp";
+import instagramIcon from "../../resources/imgs/instagram-1-svgrepo-com.webp";
+import facebookIcon from "../../resources/imgs/facebook-svgrepo-com.webp";
+import telegramIcon from "../../resources/imgs/telegram-svgrepo-com.webp";
+import snapchatIcon from "../../resources/imgs/snapchat-snap-chat-svgrepo-com.webp";
+import shareIcon from "../../resources/imgs/share-arrow-svgrepo-com.webp";
 
-import mainVideo from "../../video/main-video.mp4";
-import mainVideoWebM from "../../video/main-video.webm";
+import mainVideo from "../../resources/video/main-video.mp4";
+import mainVideoWebM from "../../resources/video/main-video.webm";
 import { Icons } from "./Icons";
 
 export function VideoHero() {

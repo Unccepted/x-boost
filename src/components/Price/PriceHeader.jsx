@@ -1,6 +1,6 @@
 import React from "react";
-import plustIcon from "../../imgs/plus-svgrepo-com.png";
-import lockIcon from "../../svg/lock-svgrepo-com.svg";
+import plustIcon from "../../resources/imgs/plus-svgrepo-com.png";
+import lockIcon from "../../resources/svg/lock-svgrepo-com.svg";
 
 export function PriceHeader(props) {
   return (

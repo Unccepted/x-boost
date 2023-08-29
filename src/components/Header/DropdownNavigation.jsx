@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import logo_img from "../../imgs/logo's-img.webp";
-import logo_text from "../../imgs/logo's-text.webp";
+import logo_img from "../../resources/imgs/logo's-img.webp";
+import logo_text from "../../resources/imgs/logo's-text.webp";
 import { DropdownLink } from "./DropdownLink";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";

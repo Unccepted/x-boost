@@ -1,17 +1,25 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
+import { useTranslation } from "react-i18next";
+// import i18n from "../../localization/translation";
+
 import { HashLink as Link } from "react-router-hash-link";
+
 import { ContextApp } from "../ContextAPI";
 
-import logo_img from "../../imgs/logo's-img.webp";
-import logo_text from "../../imgs/logo's-text.webp";
-import memnuIcon from "../../svg/menu-icon.svg";
+import logo_img from "../../resources/imgs/logo's-img.webp";
+import logo_text from "../../resources/imgs/logo's-text.webp";
+import memnuIcon from "../../resources/svg/menu-icon.svg";
+
 import { DropdownNavigation } from "./DropdownNavigation";
 import { Links } from "./Links";
 import { CalendyButton } from "../Resusable/CalendyButton";
+import ChangeLanguage from "./ChangeLanguage";
 
 export function Navigation() {
   const { scrolled, setScrolled } = useContext(ContextApp);
   const { navmenu, setNavmenu } = useContext(ContextApp);
+
+  const { t, i18n } = useTranslation();
 
   function handleScroll() {
     if (window.scrollY > 100) {
@@ -62,18 +70,15 @@ export function Navigation() {
               {/* Here change menu types   */}
 
               <ul className="hidden xl:flex xl:justify-end items-center">
-                <Links url="#why-x-boost" text="Почему X-Boost" />
-                <Links url="#our-cases" text="Наши кейсы" />
-                {/* Add when have feedack */}
-
+                <Links url="#why-x-boost" text={t("navigation.whyXBoost")} />
+                <Links url="#our-cases" text={t("navigation.ourCases")} />
                 {/* <Links url="#our-clients" text="Наши клиенты" /> */}
-                <Links url="#how-its-work" text="Как это работает" />
-                <Links url="#price" text="Цена" />
-
+                <Links url="#how-its-work" text={t("navigation.ourCases")} />
+                <Links url="#price" text={t("navigation.pricing")} />
                 <li>
                   <div className="hidden xl:flex items-center justify-end">
                     <CalendyButton
-                      buttonText="Начать"
+                      buttonText={t("navigation.getStarted")}
                       className={
                         "text-white  text-xl font-medium bg-green-500 hover:bg-green-600 py-2 px-4 rounded-md"
                       }
@@ -82,6 +87,7 @@ export function Navigation() {
                 </li>
               </ul>
             </div>
+            <ChangeLanguage />
             <button
               className="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
               onClick={() => setNavmenu(!navmenu)}

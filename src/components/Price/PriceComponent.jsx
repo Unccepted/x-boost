@@ -12,7 +12,6 @@ export function PriceComponent() {
     setIsMonthly(isChecked);
   };
 
-  console.log(Math.ceil(216 / 10) * 10);
   return (
     <section id="price" className="container px-4 mx-auto">
       <div className="py-12">

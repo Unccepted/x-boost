@@ -1,4 +1,4 @@
-import greenArrow from "../../svg/right-arrow-svgrepo-com.svg";
+import greenArrow from "../../resources/svg/right-arrow-svgrepo-com.svg";
 
 export function CardHIW({ count, header, text, time, arrow }) {
   return (

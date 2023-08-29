@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import mainVideo from "../../video/main-video.mp4";
-import mainVideoWebM from "../../video/main-video.webm";
+import mainVideo from "../../resources/video/main-video.mp4";
+import mainVideoWebM from "../../resources/video/main-video.webm";
 import { CalendyButton } from "../Resusable/CalendyButton";
 import { ContextApp } from "../ContextAPI";
 
