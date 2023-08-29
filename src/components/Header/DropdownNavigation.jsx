@@ -6,9 +6,11 @@ import { DropdownLink } from "./DropdownLink";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
 import { CalendyButton } from "../Resusable/CalendyButton";
+import { useTranslation } from "react-i18next";
 
 export function DropdownNavigation(props) {
   const { navmenu, setNavmenu } = useContext(ContextApp);
+  const { t, i18n } = useTranslation();
   return (
     <nav
       className={` ${
@@ -45,17 +47,21 @@ export function DropdownNavigation(props) {
             </button>
           </div>
           <ul className="grid grid-col-1 gap-4">
-            <DropdownLink text={"Почему X-Boost"} link={"#why-x-boost"} />
-            <DropdownLink text={"Наши кейсы"} link={"#our-cases"} />
-            {/* Remove because Client doesn't  */}
-            {/* <DropdownLink text={"Наши клиенты"} link={"#our-clients"} /> */}
-            <DropdownLink text={"Как это работает"} link={"#how-its-work"} />
-            <DropdownLink text={"Цена"} link={"#price"} />
+            <DropdownLink
+              text={t("navigation.whyXBoost")}
+              link={"#why-x-boost"}
+            />
+            <DropdownLink text={t("navigation.ourCases")} link={"#our-cases"} />
+            <DropdownLink
+              text={t("navigation.howItWorks")}
+              link={"#how-its-work"}
+            />
+            <DropdownLink text={t("navigation.pricing")} link={"#price"} />
           </ul>
           <div className="flex flex-wrap">
             <div className=" xl:flex  items-center justify-end w-full">
               <CalendyButton
-                buttonText="Начать"
+                buttonText={t("navigation.getStarted")}
                 className="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
               />
             </div>

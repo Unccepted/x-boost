@@ -35,11 +35,11 @@ export function Cases(props) {
               </h3>
               <div
                 className={` 
-                ${!props.reverse ? "lg:ml-auto " : "lg:mr-auto hidden lg:block"}
+                ${!props.reverse && "lg:ml-auto "}
                 "rounded-2xl w-28 lg:w-40 h-auto"
              `}
               >
-                <img src={props.caseIcon} alt={props.alt} />
+                {!props.reverse && <img src={props.caseIcon} alt={props.alt} />}
               </div>
             </div>
           </div>

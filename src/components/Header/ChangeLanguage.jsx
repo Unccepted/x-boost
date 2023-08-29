@@ -3,11 +3,9 @@ import { useTranslation } from "react-i18next";
 
 function ChangeLanguage() {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
 
   const handleLangChange = (evt) => {
     const lang = evt.target.value;
-    setLanguage(lang);
     i18n.changeLanguage(lang);
   };
 
@@ -27,7 +25,7 @@ function ChangeLanguage() {
             </li> */
 
   return (
-    <select onChange={handleLangChange} value={language}>
+    <select onChange={handleLangChange} value={i18n.language}>
       <option value="en">EN</option>
       <option value="uk">UK</option>
       <option value="ru">RU</option>

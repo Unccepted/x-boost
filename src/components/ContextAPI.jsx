@@ -1,4 +1,5 @@
 import React, { createContext, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 export const ContextApp = createContext();
 
 const ContextAppProvider = (props) => {
@@ -10,6 +11,8 @@ const ContextAppProvider = (props) => {
   const notifisystem = useRef();
   //State for popup component
   const [showModal, setShowModal] = useState(false);
+
+  const { t, i18n } = useTranslation();
   return (
     <ContextApp.Provider
       value={{
@@ -20,6 +23,7 @@ const ContextAppProvider = (props) => {
         setShowModal,
         navmenu,
         setNavmenu,
+        t,
       }}
     >
       {props.children}
