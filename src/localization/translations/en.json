@@ -1,9 +1,231 @@
 {
   "navigation": {
     "whyXBoost": "Why X-Boost",
-    "ourCases": "Our Cases",
+    "ourCases": "Our cases",
     "howItWorks": "How It Works",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "pricing": "price",
+    "getStarted": "Start"
+  },
+  "home": {
+    "header": "Vertical content for your business",
+    "text": "Our team will create for you a memorable vertical video content for social networks that will grab the attention of the audience and help you effectively promote your brand. It's time to make a big statement!",
+    "bookACall": "Schedule a call"
+  },
+  "socialProof": {
+    "header": "Why X-Boost?",
+    "statistics": {
+      "createdVideos": {
+        "number": "780+",
+        "text": "Created a video for our clients"
+      },
+      "marketingCosts": {
+        "number": "22.500$",
+        "text": "Marketing costs for our clients"
+      },
+      "fastestDelivery": {
+        "number": "5 days",
+        "text": "Fastest video delivery"
+      },
+      "videoviews": {
+        "number": "23M+",
+        "text": "Views of our videos"
+      }
+    },
+    "text": "We specialize in creating content for your business that, through social media posting, targeting, will bring you organic reach and increase the credibility of your business!"
+  },
+  "ourCases": {
+    "header": "Our cases",
+    "cases": {
+      "firstCase": {
+        "niche": "Tattoo parlor",
+        "text": "A cozy place for original tattoos by experienced tattoo artists with a personal touch.",
+        "reverse": false,
+        "metric": "Increase CTR",
+        "src": "../../resources/video/Case-1.mp4",
+        "number": 110,
+        "salesType": "Clients/month",
+        "percent": "110%",
+        "caseIcon": "../../resources/imgs/tatuImg.webp",
+        "alt": "black tattoo icon",
+        "icon": "../../resources/svg/clients-icon.svg",
+        "iconAlt": "black icon group of client"
+      },
+      "secondCase": {
+        "niche": "Decorative Cooler Cases",
+        "text": "Production of stylish and functional coasters of any shape and size for an individual order.",
+        "reverse": true,
+        "metric": "Increase in profitability",
+        "src": "../../resources/video/Case-2.mp4",
+        "number": 36,
+        "salesType": "Orders/month",
+        "percent": "40%",
+        "caseIcon": null,
+        "alt": null,
+        "icon": "../../resources/svg/delivery-icon.svg",
+        "iconAlt": "box icon"
+      },
+      "thirdCase": {
+        "niche": "Dating and Relationship App",
+        "text": "A handy tool for finding a partner and developing relationships in the digital age.",
+        "reverse": false,
+        "metric": "CPA decrease",
+        "src": "../../resources/video/Case-3.mp4",
+        "number": 6750,
+        "salesType": "Daily Online",
+        "percent": "65%",
+        "caseIcon": "../../resources/imgs/dating.webp",
+        "alt": "Icon App of dateg",
+        "icon": "../../resources/svg/appIcon.svg",
+        "iconAlt": "Customers online icon"
+      }
+    }
+  },
+  "moreLang": {
+    "header": "Content in 22+ languages",
+    "text": "Redefine your brand with our multilingual content. Speak in more than 22 languages, our creatives will create compelling and authentic content that can appeal to a wide audience.",
+    "langs": {
+      "first": {
+        "lang": "Russian"
+      },
+      "second": {
+        "lang": "Ukrainian"
+      },
+      "third": {
+        "lang": "English"
+      },
+      "fourth": {
+        "lang": "And others"
+      }
+    },
+    "btnText": "Start Now"
+  },
+  "howItWork": {
+    "header": "How does it work?",
+    "text": "A few easy steps to take your content to the next level",
+    "cards": {
+      "first": {
+        "count": 1,
+        "header": "First meeting and briefing",
+        "time": "2 days",
+        "text": "Let's get acquainted and dive into your product in more detail, analyze your competitors and advantages",
+        "arrow": "up"
+      },
+      "second": {
+        "count": 2,
+        "header": "Scripting",
+        "time": "5 days",
+        "text": "Implementation of the concept, writing original scripts, making changes",
+        "arrow": "down"
+      },
+      "third": {
+        "count": 3,
+        "header": "Creating a video",
+        "time": "4 days",
+        "text": "We're working on the videos, filming and editing them to perfectly match your expectations",
+        "arrow": "up"
+      },
+      "fourth": {
+        "count": 4,
+        "header": "Video upload, optimization",
+        "time": " ",
+        "text": "Testing formats, tracking metrics",
+        "arrow": "hidden"
+      }
+    }
+  },
+  "prices": {
+    "header": "Price",
+    "switcher": {
+      "oneTimeParche": "Monthly Plan",
+      "subscriptrion": "From three months"
+    },
+    "priceHeader": {
+      "include": "Already included in all tariffs:",
+      "includePlus": "Everything from the monthly plan, plus:",
+      "withoutBenefits": "4 benefits from 3 month order",
+      "withBenefit": "4 benefits from 3 month order",
+      "plusBenefits": {
+        "personalMeneger": "Personal Manager",
+        "brainShtorm": "Brainstorm session",
+        "pause": "30 days pause",
+        "priceSave": "Save price"
+      },
+      "minusBenefits": {
+        "analyze": "Competitor analysis",
+        "analyzeAudience": "TA Analysis",
+        "recording": "Shooting",
+        "montage": "montage"
+      }
+    },
+    "plans": {
+      "base": {
+        "discount": 10,
+        "plantLvl": "Basic Plan",
+        "price": 180,
+        "discountPrice": 160,
+        "array": {
+          "concept": "4 concepts",
+          "actors": "2 actors",
+          "videos": "8 finished videos"
+        }
+      },
+      "advance": {
+        "discount": 10,
+        "plantLvl": "Advanced Plan",
+        "price": 310,
+        "discountPrice": 290,
+        "best": true,
+        "array": ["8 concepts", "4 actors", "16 finished videos"]
+      },
+      "premium": {
+        "discount": 10,
+        "plantLvl": "Premium Plan",
+        "price": 490,
+        "discountPrice": 450,
+        "array": ["16 concepts", "8 actors", "32 finished videos"]
+      },
+      "scalable": {
+        "discount": 10,
+        "plantLvl": "Scalable Plan",
+        "price": "from 15",
+        "hidden": true,
+        "array": ["If you test more than 50 creatives per week"]
+      }
+    }
+  },
+  "bookACall": {
+    "header": "Still in doubt? Learn more about social media content promotion",
+    "topText": "Order a short 15-minute call and we'll be happy to discuss all aspects of our cooperation.",
+    "bottomText": "Our experienced team will be happy to share more information about our services and how we can help your brand achieve outstanding social media results.",
+    "bntText": "Subscribe to Newsletter",
+    "call": "Schedule a call"
+  },
+  "footer": {
+    "header": "X-BOOST",
+    "textUp": "Unique content for your successful social media promotion!",
+    "textDown": "Creating compelling videos in your own style for all sectors and businesses. Reach your audience on Instagram, Youtube and TikTok with our creative solutions",
+    "ourContacts": {
+      "header": "Contacts",
+      "phoneNumeber": "Phone:",
+      "email": "Email:",
+      "weInSocials": "We're in Social Media"
+    }
+  },
+  "popup": {
+    "header": "Newsletter from X-Boost",
+    "textDescription": "Be the first to know about new vertical content features!",
+    "getBestCases": "Get better cases!",
+    "subscribeBtn": "Subscribe",
+    "alert": {
+      "emailAlreadySubscribe": "This mail is already subscribed to our updates",
+      "subscribeEmail": {
+        "excellent": "Succeeded",
+        "text": "Your email has been verified, subscription activated!"
+      },
+      "somethingWrongWithEmail": {
+        "ops": "Oops!",
+        "text": "The email you entered is invalid. Please check your spelling."
+      }
+    }
   }
 }

@@ -1,13 +1,18 @@
 /* eslint-disable no-unused-vars */
+import { useContext } from "react";
+
 import logo_img from "../../resources/imgs/logo's-img.webp";
 import xIcon from "../../resources/svg/Twitter X.svg";
 import instagramIcon from "../../resources/svg/instagram-svgrepo-com.svg";
 import telegramIcon from "../../resources/svg/telegram-alt-svgrepo-com.svg";
 import youtubeIcon from "../../resources/svg/youtube-168-svgrepo-com.svg";
 import tiktokIcon from "../../resources/svg/tiktok-svgrepo-com.svg";
+
 import { Icons } from "./Icons";
+import { ContextApp } from "../ContextAPI";
 
 export default function Footer() {
+  const { t } = useContext(ContextApp);
   return (
     <footer className="bg-green-900 ">
       <div className="container px-8 pt-4 mx-auto">
@@ -20,29 +25,26 @@ export default function Footer() {
           >
             <img src={logo_img} alt="logo x-boost " className="h-12" />
             <span className="ml-2 text-2xl font-bold tracking-wide text-emerald-50 uppercase">
-              X-BOOST
+              {t("footer.header")}
             </span>
           </a>
         </h1>
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <div className="mt-6 lg:max-w-sm">
-              <p className="text-sm text-white">
-                Уникальный контент для вашего успешного продвижения в соцсетях!
-              </p>
-              <p className="mt-4 text-sm text-white">
-                Создаем привлекательные видео ролики в собственном стиле для
-                всех сфер и бизнесов. Охватите аудиторию на Instagram, Youtube и
-                TikTok с нашими креативными решениями
-              </p>
+              <p className="text-sm text-white">{t("footer.textUp")}</p>
+              <p className="mt-4 text-sm text-white">{t("footer.textDown")}</p>
             </div>
           </div>
           <div className="space-y-2 text-sm">
             <p className="text-base font-bold tracking-wide text-emerald-50">
-              Контакты
+              {t("footer.ourContacts.header")}
             </p>
             <div className="flex">
-              <p className="mr-1 text-white">Телефон:</p>
+              <p className="mr-1 text-white">
+                {" "}
+                {t("footer.ourContacts.phoneNumeber")}
+              </p>
               <a
                 href="tel:(+380)97-466-5809"
                 aria-label="(+380)97-466-5809"
@@ -52,7 +54,9 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex">
-              <p className="mr-1 text-white ">Електроная Почта:</p>
+              <p className="mr-1 text-white ">
+                {t("footer.ourContacts.email")}
+              </p>
               <a
                 href="mailto:xboosthub@gmail.com"
                 aria-label=" xboosthub@gmail.com"
@@ -64,7 +68,7 @@ export default function Footer() {
           </div>
           {/* <div>
             <span className="text-base font-bold tracking-wide text-emerald-50 ">
-              Мы в Соц.Сетях
+             {t("footer.ourContacts.weInSocials")}
             </span>
             <div className="flex justify-start items-center gap-4">
               <Icons src={instagramIcon} href={""} />

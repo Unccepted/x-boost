@@ -18,6 +18,8 @@ export function PopupComponent() {
   const [valid, setValid] = useState(null);
   const [exist, setExist] = useState(null);
 
+  const { t } = useContext(ContextApp);
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -74,7 +76,7 @@ export function PopupComponent() {
                 {/*header*/}
                 <div className="flex items-start justify-between px-6 py-4 rounded-t">
                   <h3 className="text-xl sm:text-2xl leading-tight font-bold tracking-tight text-gray-800 uppercase">
-                    Рассылка от X-Boost
+                    {t("popup.header")}
                   </h3>
                   <button
                     className=" top-7 right-4 "
@@ -89,10 +91,9 @@ export function PopupComponent() {
                 {/*body*/}
                 <div className="relative px-6 flex-auto">
                   <h3 className=" text-gray-500 text-md sm:text-lg leading-relaxed">
-                    Узнай первым про новые фишки вертикального контента!{" "}
+                    {t("popup.textDescription")}
                     <span className="text-lg sm:text-xl text-green-400">
-                      {" "}
-                      Получай лучше кейсы!
+                      {t("popup.getBestCases")}
                     </span>
                   </h3>
                 </div>
@@ -133,7 +134,7 @@ export function PopupComponent() {
                       // onClick={() => setShowModal(false)}
                       onClick={handleSubmit}
                     >
-                      Подписаться
+                      {t("popup.subcribeBtn")}
                     </button>
                   </div>
                 </form>
@@ -142,19 +143,24 @@ export function PopupComponent() {
                   {valid === null ? null : valid ? (
                     exist ? (
                       <p className="mb-4 text-sm text-green-600 dark:text-green-500">
-                        Эта почта уже подписана на наши обновления
+                        {t("popup.alert.emailAlreadySubscribe")}
                       </p>
                     ) : (
                       <p className="mb-4 text-sm text-green-600 dark:text-green-500">
-                        <span className="font-medium">Успешно!</span> Ваша
-                        электронная почта подтверждена, подписка активирована!
+                        <span className="font-medium">
+                          {" "}
+                          {t("popup.alert.subscribeEmail.excellent")}
+                        </span>{" "}
+                        {t("popup.alert.subscribeEmail.text")}
                       </p>
                     )
                   ) : (
                     <p className="mb-4 text-md text-red-600 dark:text-red-500">
-                      <span className="font-medium">Упс!</span> Введенный email
-                      недействителен. Пожалуйста, проверьте правильность
-                      написания.
+                      <span className="font-medium">
+                        {" "}
+                        {t("popup.alert.somethingWrongWithEmail.ops")}
+                      </span>{" "}
+                      {t("popup.alert.somethingWrongWithEmail.text")}
                     </p>
                   )}
                 </div>
