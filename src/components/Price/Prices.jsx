@@ -61,15 +61,16 @@ export function Prices(props) {
         )}
 
         <ul className="self-start border-t w-full border-gray-200 ">
-          {props.array.map((item) => (
-            <li
-              key={item}
-              className="flex items-center mb-3 text-gray-500 font-medium mt-2 text-sm"
-            >
-              <CheckCircleRoundedIcon className="text-green-400 mr-3" />
-              <span>{item}</span>
-            </li>
-          ))}
+          {props.array !== undefined &&
+            Object.values(props.array).map((item) => (
+              <li
+                key={item}
+                className="flex items-center mb-3 text-gray-500 font-medium mt-2 text-sm"
+              >
+                <CheckCircleRoundedIcon className="text-green-400 mr-3" />
+                <span>{item}</span>
+              </li>
+            ))}
         </ul>
         <CalendyButton
           className="inline-block py-3 px-7 mt-auto w-full border border-green-500 text-green-500 font-medium text-center bg-white hover:bg-white-fade focus:ring-2 focus:ring-white-fade focus:ring-opacity-50 rounded-md shadow-sm"

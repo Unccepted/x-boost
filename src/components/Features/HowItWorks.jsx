@@ -20,6 +20,7 @@ export function HowItWorks() {
         <div className="grid grid-rows-1 lg:grid-cols-4 gap-y-8 ">
           {Object.values(cards).map((item, index) => (
             <CardHIW
+              key={index}
               count={item.count}
               header={item.header}
               time={item.time}

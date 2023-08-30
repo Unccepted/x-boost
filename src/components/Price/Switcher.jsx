@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ContextApp } from "../ContextAPI";
 
 const Switcher = ({ onChange }) => {
   const [isChecked, setIsChecked] = useState(true);
-
+  const { t } = useContext(ContextApp);
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
     onChange(!isChecked);
@@ -22,14 +23,14 @@ const Switcher = ({ onChange }) => {
             !isChecked ? "text-primary bg-[#f4f7ff]" : "text-"
           }`}
         >
-          План на месяц
+          {t("prices.switcher.oneTimeParche")}
         </span>
         <span
           className={`min-[425px]:w-1/2 flex items-center justify-center space-x-[6px] rounded py-2 px-4 lg:px-8 text-sm font-medium ${
             isChecked ? "text-white-fade bg-green-600 " : "text-gray-900"
           }`}
         >
-          От трех месяцев
+          {t("prices.switcher.subscriprion")}
         </span>
       </label>
     </>

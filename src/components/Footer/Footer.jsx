@@ -9,7 +9,7 @@ import { Icons } from "./Icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-dark ">
+    <footer className="bg-green-900 ">
       <div className="container px-8 pt-4 mx-auto">
         <h1>
           <a
@@ -27,10 +27,10 @@ export default function Footer() {
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <div className="mt-6 lg:max-w-sm">
-              <p className="text-sm text-white-light">
+              <p className="text-sm text-white">
                 Уникальный контент для вашего успешного продвижения в соцсетях!
               </p>
-              <p className="mt-4 text-sm text-white-light">
+              <p className="mt-4 text-sm text-white">
                 Создаем привлекательные видео ролики в собственном стиле для
                 всех сфер и бизнесов. Охватите аудиторию на Instagram, Youtube и
                 TikTok с нашими креативными решениями
@@ -42,21 +42,21 @@ export default function Footer() {
               Контакты
             </p>
             <div className="flex">
-              <p className="mr-1 text-white-light">Телефон:</p>
+              <p className="mr-1 text-white">Телефон:</p>
               <a
                 href="tel:(+380)97-466-5809"
                 aria-label="(+380)97-466-5809"
-                className="transition-colors duration-300 text-gray-400 hover:text-white-light"
+                className="transition-colors duration-300 text-gray-400 hover:text-white"
               >
                 (+380) 97-466-5809
               </a>
             </div>
             <div className="flex">
-              <p className="mr-1 text-white-light ">Електроная Почта:</p>
+              <p className="mr-1 text-white ">Електроная Почта:</p>
               <a
                 href="mailto:xboosthub@gmail.com"
                 aria-label=" xboosthub@gmail.com"
-                className="transition-colors duration-300 text-gray-400 hover:text-white-light"
+                className="transition-colors duration-300 text-gray-400 hover:text-white"
               >
                 xboosthub@gmail.com
               </a>
@@ -83,7 +83,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white-light"
+                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
               >
                 F.A.Q
               </a>
@@ -91,7 +91,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white-light"
+                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
               >
                 Privacy Policy
               </a>
@@ -99,7 +99,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white-light"
+                className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
               >
                 Terms &amp; Conditions
               </a>

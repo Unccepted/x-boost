@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Switcher from "./Switcher";
 import { Prices } from "./Prices";
 import { PriceHeader } from "./PriceHeader";
+import { ContextApp } from "../ContextAPI";
 
 export function PriceComponent() {
   const [isMonthly, setIsMonthly] = useState(true);
-
+  const { t } = useContext(ContextApp);
   const handleChange = (isChecked) => {
     setIsMonthly(isChecked);
   };
@@ -20,7 +21,7 @@ export function PriceComponent() {
             <div className="flex flex-col lg:flex-row  justify-between items-center">
               <div>
                 <h2 className="text-center pb-8 text-5xl lg:text-6xl text-gray-900 font-bold tracking-tighter">
-                  Цена
+                  {t("prices.header")}
                 </h2>
               </div>
               <div className="flex w-full sm:w-3/4 lg:justify-end lg:w-2/4  xl:w-1/3">
@@ -31,39 +32,21 @@ export function PriceComponent() {
           </div>
         </div>
         <div className="flex flex-nowrap pt-4 xl:justify-between gap-8 pb-8 overflow-x-scroll xl:overflow-x-auto">
-          <Prices
-            isMonthly={isMonthly}
-            discount={10}
-            plantLvl={"Базовый План"}
-            price={180}
-            discountPrice={160}
-            array={["4 концепта", "2 актера", "8 готовых видео"]}
-          />
-          <Prices
-            isMonthly={isMonthly}
-            discount={10}
-            price={310}
-            discountPrice={290}
-            best={true}
-            plantLvl={"Продвинутый план"}
-            // scale={"scale-105"}
-            array={["8 концептов", "4 актера", "16 готовых видео"]}
-          />
-          <Prices
-            isMonthly={isMonthly}
-            discount={10}
-            price={490}
-            discountPrice={450}
-            plantLvl={"Премиум план"}
-            array={["16 концепов", "8 актеров", "32 готовых видео"]}
-          />
-          <Prices
-            isMonthly={false}
-            hidden={true}
-            price={"от 15"}
-            plantLvl={"Маштабируемый план"}
-            array={["Если вы тестируете болеше 50 креативов в неделю"]}
-          />
+          {Object.values(t("prices.plans")).map((item, index) => {
+            return (
+              <Prices
+                key={index}
+                isMonthly={isMonthly}
+                hidden={item.hidden}
+                best={item.best}
+                discount={item.discount}
+                price={item.price}
+                discountPrice={item.discountPrice}
+                plantLvl={item.plantLvl}
+                array={item.array}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
