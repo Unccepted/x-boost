@@ -7,6 +7,7 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { ContextApp } from "../ContextAPI";
 import { CalendyButton } from "../Resusable/CalendyButton";
 import { useTranslation } from "react-i18next";
+import ChangeLanguage from "./ChangeLanguage";
 
 export function DropdownNavigation(props) {
   const { navmenu, setNavmenu } = useContext(ContextApp);
@@ -65,6 +66,9 @@ export function DropdownNavigation(props) {
                 className="inline-block py-2 px-4  text-md  w-full leading-5 text-white bg-green-500 hover:bg-green-600 font-medium text-center focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
               />
             </div>
+          </div>
+          <div className="flex justify-end">
+            <ChangeLanguage />
           </div>
         </div>
       </div>

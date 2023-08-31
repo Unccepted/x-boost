@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+// import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 function ChangeLanguage() {
-  const { t, i18n } = useTranslation();
-
+  const { i18n } = useTranslation();
   const handleLangChange = (evt) => {
     const lang = evt.target.value;
     i18n.changeLanguage(lang);
@@ -12,24 +12,40 @@ function ChangeLanguage() {
   useEffect(() => {
     const userLang = navigator.language.slice(0, 2);
     i18n.changeLanguage(userLang);
-  }, []);
-
-  /* <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
-          <ul class="py-2 font-medium" role="none">
-            <li>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                <div class="inline-flex items-center">
-                  English (US)
-                </div>
-              </a>
-            </li> */
+  }, [i18n]);
 
   return (
-    <select onChange={handleLangChange} value={i18n.language}>
-      <option value="en">EN</option>
-      <option value="uk">UK</option>
-      <option value="ru">RU</option>
-    </select>
+    <>
+      {/* <Helmet>
+        <link rel="alternate" hreflang="en" href="http://localhost:3000/en" />
+        <link rel="alternate" hreflang="uk" href="http://localhost:3000/uk" />
+        <link rel="alternate" hreflang="ru" href="http://localhost:3000/ru" />
+      </Helmet> */}
+      <select
+        onChange={handleLangChange}
+        value={i18n.language}
+        className=" text-green-500 ml-4 text-base list-none bg-white rounded-md border-2 border-green-500 shadow-green-500  p-2 font-medium  outline-none"
+      >
+        <option
+          value="uk"
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+        >
+          UA
+        </option>
+        <option
+          value="en"
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+        >
+          EN
+        </option>
+        <option
+          value="ru"
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+        >
+          RU
+        </option>
+      </select>
+    </>
   );
 }
 

@@ -10,6 +10,7 @@ import { SocialProof } from "../WhyX/SocialProof";
 import OurCases from "../Content/OurCases";
 import MoreLanguage from "../Features/MoreLanguage";
 import PopupComponent from "../Popup/PopupComponent.jsx";
+
 // import { GrowChart } from "../Charts/GrowChart";
 
 function Main() {

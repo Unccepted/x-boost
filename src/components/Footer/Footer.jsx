@@ -80,9 +80,7 @@ export default function Footer() {
           </div> */}
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-          <p className="text-sm text-gray-400">
-            © Copyright 2023. All rights reserved.
-          </p>
+          <p className="text-sm text-gray-400">© {t("footer.rights")}</p>
           {/* <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
               <a

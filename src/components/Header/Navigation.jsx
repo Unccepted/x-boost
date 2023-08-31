@@ -87,7 +87,9 @@ export function Navigation() {
                 </li>
               </ul>
             </div>
-            <ChangeLanguage />
+            <div className="hidden md:block">
+              <ChangeLanguage />
+            </div>
             <button
               className="self-center xl:hidden rounded-md p-2 hover:shadow-inner"
               onClick={() => setNavmenu(!navmenu)}

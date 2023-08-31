@@ -24,6 +24,7 @@ const ContextAppProvider = (props) => {
         navmenu,
         setNavmenu,
         t,
+        i18n,
       }}
     >
       {props.children}

@@ -209,7 +209,8 @@
       "phoneNumeber": "Phone:",
       "email": "Email:",
       "weInSocials": "We're in Social Media"
-    }
+    },
+    "rights": "Copyright 2023. All rights reserved."
   },
   "popup": {
     "header": "Newsletter from X-Boost",

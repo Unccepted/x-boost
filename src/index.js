@@ -1,21 +1,24 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ContextAppProvider from "./components/ContextAPI";
 import { BrowserRouter as Router } from "react-router-dom";
-import './localization/i18n';
+import "./localization/i18n";
+import LoadingPage from "./components/LoadingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ContextAppProvider>
-      <Router>
-        <App />
-      </Router>
-    </ContextAppProvider>
-  </React.StrictMode>,
+  <Suspense fallback={<LoadingPage />}>
+    <React.StrictMode>
+      <ContextAppProvider>
+        <Router>
+          <App />
+        </Router>
+      </ContextAppProvider>
+    </React.StrictMode>
+  </Suspense>,
 );
 
 // If you want to start measuring performance in your app, pass a function
