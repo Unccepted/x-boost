@@ -137,7 +137,7 @@
     "header": "Price",
     "switcher": {
       "oneTimeParche": "Monthly Plan",
-      "subscriptrion": "From three months"
+      "subscriprion": "From three months"
     },
     "priceHeader": {
       "include": "Already included in all tariffs:",
@@ -228,5 +228,11 @@
         "text": "The email you entered is invalid. Please check your spelling."
       }
     }
+  },
+  "cookies": {
+    "header": "This website uses cookies",
+    "text": "This website uses cookies for analytics and to enhance website functionality.",
+    "ok": "I agree",
+    "no": "I disagree"
   }
 }

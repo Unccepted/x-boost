@@ -23,7 +23,7 @@ function OurCases() {
         <div className="pt-10">
           <div className="pb-4 text-center xl:grid xl:grid-cols-2 w-4/6 mx-auto">
             <h2 className="mb-4 text-6xl text-gray-900 font-bold tracking-tighter">
-              Наши кейсы
+              {t("ourCases.header")}
             </h2>
           </div>
         </div>

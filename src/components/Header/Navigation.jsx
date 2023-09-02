@@ -73,7 +73,7 @@ export function Navigation() {
                 <Links url="#why-x-boost" text={t("navigation.whyXBoost")} />
                 <Links url="#our-cases" text={t("navigation.ourCases")} />
                 {/* <Links url="#our-clients" text="Наши клиенты" /> */}
-                <Links url="#how-its-work" text={t("navigation.ourCases")} />
+                <Links url="#how-its-work" text={t("navigation.howItWorks")} />
                 <Links url="#price" text={t("navigation.pricing")} />
                 <li>
                   <div className="hidden xl:flex items-center justify-end">

@@ -10,12 +10,14 @@ import { SocialProof } from "../WhyX/SocialProof";
 import OurCases from "../Content/OurCases";
 import MoreLanguage from "../Features/MoreLanguage";
 import PopupComponent from "../Popup/PopupComponent.jsx";
+import GoogleAnalyticsCookies from "../../services/cookes/GoogleAnalyticsCookies";
 
 // import { GrowChart } from "../Charts/GrowChart";
 
 function Main() {
   return (
     <>
+      <GoogleAnalyticsCookies />
       <Navigation />
       <Home />
       {/* <OurPartners /> */}

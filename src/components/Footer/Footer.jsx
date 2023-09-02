@@ -31,12 +31,12 @@ export default function Footer() {
         </h1>
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
-            <div className="mt-6 lg:max-w-sm">
+            <div className=" lg:max-w-sm">
               <p className="text-sm text-white">{t("footer.textUp")}</p>
               <p className="mt-4 text-sm text-white">{t("footer.textDown")}</p>
             </div>
           </div>
-          <div className="space-y-2 text-sm">
+          <div className="md:col-start-4 text-sm">
             <p className="text-base font-bold tracking-wide text-emerald-50">
               {t("footer.ourContacts.header")}
             </p>
